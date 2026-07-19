@@ -47,7 +47,7 @@ The implementation used:
 
 - Python;
 - GitHub;
-  ### GitHub Repository
+- GitHub Repository
 
 The repository provides evidence of the final source code, modular project structure, testing files and supporting documentation.
 
