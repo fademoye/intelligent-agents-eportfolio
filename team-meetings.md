@@ -1,81 +1,24 @@
 # Team Meeting Notes
 
-This page records the main meetings and decisions from the ResearchMate group project.
+This page summarises the main meetings, decisions and actions from the ResearchMate group project.
 
-## Meeting 1
+| Date | Attendees | Main topics discussed | Decisions made | My actions |
+|---|---|---|---|---|
+| [Insert actual date] | [Insert actual attendees] | Initial idea, target users and project problem | [Insert actual decisions] | [Insert what you personally agreed to do] |
+| [Insert actual date] | [Insert actual attendees] | Architecture, agent roles and technologies | [Insert actual decisions] | [Insert your personal actions] |
+| [Insert actual date] | [Insert actual attendees] | Progress, presentation and final tasks | [Insert actual decisions] | [Insert your personal actions] |
 
-**Date:** [Insert date]  
-**Attendees:** [Insert names]
+## Evidence
 
-### Topics discussed
+- Meeting screenshots
+- Calendar or video-call invitations
+- WhatsApp or Teams messages
+- Shared notes
+- Action lists
+- Group presentation planning
 
-- Initial project idea
-- Intended users
-- Main problem to solve
-- Possible intelligent-agent approach
+## Reflection
 
-### Decisions made
+The meetings showed me that virtual teamwork requires clear ownership, documented decisions and follow-up actions.
 
-- [Insert decision]
-- [Insert decision]
-
-### My actions
-
-- [Insert your action]
-- [Insert your action]
-
----
-
-## Meeting 2
-
-**Date:** [Insert date]  
-**Attendees:** [Insert names]
-
-### Topics discussed
-
-- System architecture
-- Agent roles
-- Tools and technologies
-- Division of responsibilities
-
-### Decisions made
-
-- [Insert decision]
-- [Insert decision]
-
-### My actions
-
-- [Insert your action]
-- [Insert your action]
-
----
-
-## Meeting 3
-
-**Date:** [Insert date]  
-**Attendees:** [Insert names]
-
-### Topics discussed
-
-- Progress review
-- Project risks
-- Presentation or documentation
-- Final actions
-
-### Decisions made
-
-- [Insert decision]
-- [Insert decision]
-
-### My actions
-
-- [Insert your action]
-- [Insert your action]
-
----
-
-## Overall Reflection
-
-The meetings helped the team coordinate tasks, clarify responsibilities and make shared decisions.
-
-They also showed me the importance of documenting actions clearly and confirming ownership of tasks.
+Where responsibilities were not recorded clearly, it became harder to track progress and distinguish individual contributions. In future group projects, I would use a shared action log with named owners and deadlines from the first meeting.
