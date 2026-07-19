@@ -9,9 +9,9 @@
 
 Welcome to my Intelligent Agents e-portfolio.
 
-This portfolio presents evidence of my learning, technical development, teamwork and reflective practice throughout the Intelligent Agents module.
+This portfolio presents a coherent record of my learning, technical development, teamwork and reflective practice throughout the Intelligent Agents module.
 
-It includes my collaborative discussion contributions, team project work, system design, individual implementation, testing evidence, professional skills development and critical reflection.
+It includes evidence from collaborative discussions, team activities, system design, individual implementation, testing, professional development and critical reflection. The portfolio also evaluates my Week 7 design and Week 11 implementation and demonstrates how my work addresses the four module learning outcomes.
 
 ## Portfolio Contents
 
