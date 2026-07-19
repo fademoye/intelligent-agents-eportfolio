@@ -1,16 +1,18 @@
 # Week 7 System Design
 
+## Design Context
+
+The Week 7 design was developed as part of the ResearchMate group project. It proposed a multi-agent system for academic research planning and later informed the narrower individual prototype implemented in Week 11.
+
 ## Project Aim
 
-The Week 7 design focused on developing an intelligent agent system that could support students with academic research planning.
-
-The proposed system aimed to help users structure a research topic, aim, objectives, research questions and methodology.
+The proposed system aimed to support postgraduate students in developing and aligning a research topic, aim, objectives, research questions and methodology.
 
 ## Problem Being Addressed
 
-Many students struggle to make sure that their research topic, aim, objectives, questions and methodology are properly aligned.
+Students can find it difficult to maintain alignment between the different elements of a research proposal.
 
-The proposed intelligent agent system was intended to guide the user through this process and provide a structured research plan.
+The proposed system was intended to guide users through this process and generate a structured research plan for further review.
 
 ## Proposed Users
 
@@ -23,9 +25,9 @@ The intended users were postgraduate students preparing:
 
 ## Proposed Architecture
 
-The design used a multi-agent approach in which specialised agents would perform different tasks.
+The design used a multi-agent approach in which specialised agents would perform distinct tasks.
 
-The proposed components included:
+The proposed agents included:
 
 - a planning agent;
 - a retrieval agent;
@@ -33,15 +35,15 @@ The proposed components included:
 - an analysis agent;
 - an output-generation agent.
 
-The agents would work together to transform a user's initial research idea into a structured research plan.
+These agents were intended to coordinate in order to transform an initial research idea into a structured research plan.
 
 ## Proposed Workflow
 
 1. The user enters a research topic or area of interest.
 2. The planning agent identifies the main research-planning requirements.
 3. The retrieval agent gathers relevant information.
-4. The processing and analysis components examine the information.
-5. The output agent generates a structured research plan.
+4. The processing and analysis agents examine the information.
+5. The output-generation agent produces a structured research plan.
 6. The user reviews and refines the result.
 
 ## Tools and Technologies Considered
@@ -56,47 +58,53 @@ The design considered:
 - GitHub;
 - modular software design.
 
+These technologies were evaluated during the design stage. Not all were implemented in the final prototype.
+
 ## Design Rationale
 
-A multi-agent architecture was considered appropriate because the research-planning process contains several distinct tasks.
+A multi-agent architecture was considered appropriate because academic research planning contains several distinct tasks.
 
-Separating these tasks into specialist components could improve modularity, maintainability and clarity.
+Separating these tasks into specialist agents could improve modularity, maintainability and clarity.
+
+However, the approach also increased integration complexity. Each additional agent introduced communication, coordination and testing requirements, making the original design ambitious for the available timeframe.
 
 ## Risks and Limitations
 
-The proposed system had several possible risks:
+The proposed system had several risks:
 
 - inaccurate or fabricated AI outputs;
 - biased recommendations;
-- overreliance by students;
+- student overreliance;
 - weak source quality;
 - lack of transparency;
-- data privacy concerns;
+- data-privacy concerns;
 - excessive project scope.
+
+The most significant risks were inaccurate outputs, limited source verification and overreliance. These could cause users to accept plausible but unsuitable academic guidance without checking it against literature, university requirements or supervisor advice.
 
 ## Ethical and Professional Considerations
 
 The system was intended to support students rather than replace academic judgement.
 
-Users would still need to verify recommendations, consult academic sources and follow university guidance.
+Users would still need to verify recommendations, consult academic literature and follow university and supervisor guidance.
+
+A responsibly developed version would also require clearer explanations, source verification, privacy safeguards and human review.
 
 ## Week 7 Evidence
 
-Add your real Week 7 evidence here:
+- [Week 7 design document](evidence/design/week-7-design-document.pdf)
+- [ResearchMate architecture diagram](evidence/design/week-7-architecture.png)
+- [Workflow diagram](evidence/design/week-7-workflow.png)
+- [Relevant presentation material](evidence/design/week-7-slides.pdf)
 
-- design document;
-- architecture diagram;
-- workflow diagram;
-- presentation slide;
-- pseudocode;
-- tutor or peer feedback.
-
-Example image link:
-
-![Week 7 architecture diagram](evidence/design/week-7-architecture.png)
+![ResearchMate proposed architecture](evidence/design/week-7-architecture.png)
 
 ## Reflection on the Design Stage
 
-The design stage helped me understand the importance of defining the project scope before implementation.
+At the design stage, I initially viewed the number of agents and features as evidence of technical strength.
 
-It also showed me that a technically ambitious system must be balanced against time, available tools and the need to produce a testable prototype.
+As the project developed, I recognised that the architecture was broader than could be implemented and evaluated reliably within the module timeframe.
+
+This changed my understanding of good design. An effective architecture must be technically coherent, proportionate to the problem and realistic to test.
+
+In future, I would define the minimum viable system, evaluation criteria and technical dependencies before expanding the number of agents.
