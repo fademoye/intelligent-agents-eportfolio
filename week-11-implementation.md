@@ -43,63 +43,99 @@ The main components included:
 
 ## Technologies Used
 
-The implementation used:
+The final implementation used:
 
 - Python;
 - GitHub;
-- GitHub Repository
-
-The repository provides evidence of the final source code, modular project structure, testing files and supporting documentation.
-
-[Open the individual project repository](https://github.com/fademoye/LLM-Planning-Agent-Project)
 - modular programming;
-- `pytest`;
+- pytest;
 - command-line interaction;
 - structured output generation.
 
+## GitHub Repository
+
+The repository provides evidence of the final source code, modular project structure, testing files and supporting documentation.
+
+[Open the individual project repository](INSERT-YOUR-REAL-REPOSITORY-URL)
+
 ## Code Structure
 
-The project was separated into different modules rather than placing all the logic in one file.
+The project was separated into different modules rather than placing all logic in one file.
 
 This improved:
 
 - readability;
 - maintainability;
-- testing;
+- testability;
 - separation of responsibilities;
 - future extensibility.
+
+The final implementation used agent-inspired modular components coordinated through a defined workflow. It did not implement fully independent agents with autonomous communication and decision-making.
 
 ## Testing
 
 The system was tested using unit and functional tests.
 
-The tests were used to check:
+The tests checked:
 
 - whether the planning component produced the expected structure;
-- whether the agent workflow operated correctly;
+- whether the overall workflow operated correctly;
 - whether the final output contained the required research-planning elements.
 
-The completed tests passed successfully.
+All completed tests passed successfully.
+
+However, passing functional tests did not prove that every generated recommendation was academically accurate or appropriate. Further evaluation would be needed to assess relevance, alignment and usefulness.
 
 ## Example Output
 
-Add an example of the system output here.
+Replace this section with one genuine output produced by your system.
 
-```text
-Research Topic:
-[Insert example]
+## Implementation Evidence
 
-Research Aim:
-[Insert generated aim]
+### System Running
 
-Research Objectives:
-1. [Insert objective]
-2. [Insert objective]
-3. [Insert objective]
+![System running](evidence/implementation/system-running.png)
 
-Research Questions:
-1. [Insert question]
-2. [Insert question]
+### User Input
 
-Suggested Methodology:
-[Insert methodology]
+![Example user input](evidence/implementation/user-input.png)
+
+### Generated Output
+
+![Generated research plan](evidence/implementation/generated-output.png)
+
+### Project Structure
+
+![Project folder structure](evidence/implementation/project-structure.png)
+
+### Testing Evidence
+
+![Passed pytest results](evidence/testing/pytest-passed.png)
+
+## Limitations
+
+The final implementation was a functional prototype rather than a production-ready system.
+
+Its main limitations were:
+
+- the quality of output depended on the quality of the user input;
+- academic-source verification was limited;
+- the system could not guarantee that every recommendation was appropriate;
+- testing focused mainly on technical functionality;
+- the command-line interface was not ideal for non-technical users;
+- further user testing and academic review would be required.
+
+## What I Learned
+
+The implementation strengthened my skills in modular Python development, testing, debugging, GitHub and project scoping.
+
+I also learned that technical success and output quality are different. A system can execute correctly while still producing guidance that needs academic verification and human review.
+
+## Connection to Learning Outcomes
+
+This implementation supported:
+
+- Learning Outcome 1 through application and evaluation of agent architecture;
+- Learning Outcome 2 through use of agent techniques to address academic research planning;
+- Learning Outcome 3 through Python development, testing and consideration of ethical risks;
+- Learning Outcome 4 through its connection to the earlier ResearchMate group project and the lessons learned from virtual collaboration.
