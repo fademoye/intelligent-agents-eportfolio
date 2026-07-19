@@ -2,9 +2,9 @@
 
 ## Project Overview
 
-ResearchMate was a group project focused on designing an intelligent multi-agent system to support students with academic research planning.
+ResearchMate was a collaborative project focused on designing an intelligent multi-agent system to support students with academic research planning.
 
-The proposed system was intended to help users develop a research topic, aim, objectives, research questions and methodology through the use of specialised intelligent agents.
+The proposed system was intended to help users develop and align a research topic, aim, objectives, research questions and methodology through a sequence of specialised agent functions.
 
 ## Team Members
 
@@ -15,18 +15,21 @@ The proposed system was intended to help users develop a research topic, aim, ob
 
 ## My Individual Contribution
 
-My contribution to the project included:
+My contribution included:
 
-- participating in team meetings and design discussions;
-- contributing to the system architecture;
-- researching intelligent-agent approaches;
-- helping define the purpose and workflow of the system;
-- contributing to the documentation and presentation;
-- reviewing the relationship between the agents and the user journey.
+- participating in virtual team meetings and design discussions;
+- researching intelligent-agent and multi-agent approaches;
+- contributing to the definition of the ResearchMate workflow;
+- reviewing how planning, retrieval, processing and output functions could interact;
+- contributing to project documentation and presentation preparation;
+- participating in peer-review activity;
+- helping distinguish the proposed user journey from the technical agent workflow.
+
+These contributions should be supported by meeting notes, shared documents, presentation material and peer-review evidence.
 
 ## System Design
 
-The group considered a hybrid multi-agent architecture in which different agents would perform specialised tasks.
+The group considered a hybrid multi-agent architecture in which specialised agents or components would perform distinct tasks.
 
 These included:
 
@@ -36,11 +39,11 @@ These included:
 - analysis;
 - output generation.
 
-The agents were intended to collaborate to create a structured academic research plan.
+The intention was for these functions to work together to transform an initial research idea into a structured academic research plan.
 
 ## Tools and Technologies Considered
 
-The project considered the use of:
+The group considered:
 
 - Python;
 - large language models;
@@ -50,50 +53,67 @@ The project considered the use of:
 - GitHub;
 - modular agent architecture.
 
+Not all of these technologies were implemented. Some were researched or proposed during the design stage, while the later individual prototype used a more focused modular Python structure.
+
 ## Teamwork and Collaboration
 
-The project required virtual teamwork, communication and shared decision-making.
+The project required virtual teamwork, communication, shared decision-making and the allocation of responsibilities.
 
-The team discussed the scope of the system, agent responsibilities, architecture and the division of tasks.
+The team discussed:
+
+- project scope;
+- intended users;
+- system architecture;
+- agent responsibilities;
+- technologies;
+- presentation structure;
+- division of tasks.
 
 ## Challenges
 
-The main challenges included:
+One challenge was agreeing a realistic project scope. The initial concept was broad and included several specialist agents, retrieval capabilities and a more advanced interface.
 
-- agreeing the exact project scope;
-- coordinating work across the group;
-- defining individual responsibilities;
-- managing time;
-- balancing technical ambition with the module deadline.
+A second challenge was coordinating work across a virtual team. When responsibilities were not always documented clearly, it became harder to track ownership and progress.
+
+Time management was also important because the group needed to balance technical ambition with the assessment deadline.
+
+These challenges showed me that virtual development work requires clear roles, written decisions, action tracking and regular progress reviews.
 
 ## What I Learned
 
-The project helped me understand that successful multi-agent development requires more than technical knowledge.
+The project helped me understand that successful multi-agent development depends on both technical design and effective team organisation.
 
-It also requires:
+I learned the importance of:
 
-- clear roles;
-- shared expectations;
-- regular communication;
-- documented decisions;
-- realistic scope management.
+- agreeing clear roles;
+- documenting decisions;
+- setting realistic scope;
+- tracking actions;
+- communicating regularly;
+- distinguishing collaborative work from individual ownership.
+
+## Distinction Between Group and Individual Work
+
+ResearchMate was developed as a collaborative group concept.
+
+The Week 11 implementation presented elsewhere in this portfolio was my individual prototype. The group project informed my understanding of the problem, architecture and user journey, while the individual coding, testing and implementation evidence were completed separately.
 
 ## Connection to Learning Outcomes
 
-This project supported:
+The project supported:
 
-- Learning Outcome 1: analysing different agent architectures;
-- Learning Outcome 2: applying agent techniques to a real-world problem;
-- Learning Outcome 3: selecting appropriate tools and considering risks;
-- Learning Outcome 4: working effectively in a virtual development team.
+- Learning Outcome 1 through analysis of agent architectures and approaches;
+- Learning Outcome 2 through application of agent techniques to academic research planning;
+- Learning Outcome 3 through consideration of appropriate tools, technical limitations and ethical risks;
+- Learning Outcome 4 through virtual teamwork, communication and shared project organisation.
 
 ## Evidence
 
-Add links or screenshots here:
-
-- Team meeting notes
-- Architecture diagram
+- [Team meeting notes](team-meetings.html)
+- [Week 7 system design](week-7-design.html)
+- [Week 11 individual implementation](week-11-implementation.html)
+- ResearchMate architecture diagram
 - Group presentation
-- Peer review
-- Shared documents
-- GitHub activity
+- Peer-review evidence
+- Shared planning documents
+- Group communication screenshots
