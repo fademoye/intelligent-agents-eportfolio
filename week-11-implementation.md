@@ -47,6 +47,11 @@ The implementation used:
 
 - Python;
 - GitHub;
+  ### GitHub Repository
+
+The repository provides evidence of the final source code, modular project structure, testing files and supporting documentation.
+
+[Open the individual project repository](https://github.com/fademoye/LLM-Planning-Agent-Project)
 - modular programming;
 - `pytest`;
 - command-line interaction;
