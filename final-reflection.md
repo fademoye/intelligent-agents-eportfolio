@@ -4,7 +4,7 @@
 
 This reflection evaluates my learning and development throughout the Intelligent Agents module. It considers my experience of studying agent architectures, contributing to the ResearchMate group project, designing an intelligent-agent system and implementing an individual research-planning prototype.
 
-The reflection uses Rolfe et al.'s (2001) framework of What?, So what? and Now what? to examine the technical, professional and personal learning that developed during the module.
+The reflection uses Rolfe, Freshwater and Jasper’s (2001) framework of What?, So what? and Now what? to examine the technical, professional and personal learning that developed during the module.
 
 ## What?
 
@@ -12,9 +12,11 @@ The module introduced me to different types of intelligent-agent systems, includ
 
 The main group project was ResearchMate, a proposed multi-agent system intended to support students with academic research planning. The system was designed to help users develop a research topic, aim, objectives, research questions and methodology. The group considered a hybrid architecture involving several specialist agents, including planning, retrieval, processing, analysis and output-generation components.
 
-My individual Week 11 implementation focused on a narrower version of the same problem. I developed a modular Python prototype that accepted a research topic and produced a structured research plan. The system included separate modules for planning, processing, retrieval, coordination and output generation. I also completed unit and functional testing using pytest.
+My individual Week 11 implementation focused on a narrower version of the same problem. I developed a modular Python prototype that accepted a research topic and produced a structured research plan. The system included separate modules for planning, processing, simplified retrieval, coordination and output generation. I also completed unit and functional testing using pytest.
 
 The project did not fully reproduce the ambition of the Week 7 design. The final prototype was less autonomous and had more limited retrieval and source-verification capabilities. However, it produced a functioning and testable implementation that demonstrated the central research-planning workflow.
+
+The distinction between modular components and genuinely interacting autonomous agents is important when evaluating a multi-agent design (Wooldridge, 2009).
 
 ## So what?
 
@@ -22,11 +24,13 @@ One of my most important areas of learning was project scoping. During the desig
 
 At first, reducing the scope felt like a compromise. I was concerned that simplifying the architecture might make the project appear less technically advanced. As the implementation progressed, I recognised that completing a smaller, coherent and testable system was more valuable than presenting a larger design with incomplete functionality.
 
+During the implementation, I responded to the growing scope by prioritising the core research-planning workflow and separating the code into modules that could be tested independently.
+
 This changed the way I think about technical ambition. A strong project is not defined only by the number of features it contains. It also depends on whether the core problem is clearly understood, whether the architecture is appropriate and whether the result can be evaluated honestly.
 
-The modular structure of the implementation also strengthened my software-development skills. Separating the system into planner, processor, retriever and output components made the responsibilities of each part clearer. It also made testing easier and reduced the risk of placing all the logic in one large script.
+The modular structure of the implementation strengthened my software-development skills. Separating the system into planner, processor, retriever and output components made the responsibilities of each part clearer. It also made testing easier and reduced the risk of placing all the logic in one large script.
 
-Testing was another important learning experience. Passing the unit and functional tests gave me confidence that the technical workflow operated as expected. However, I also learned that technical tests only answer part of the evaluation question. A system can execute correctly while still producing weak, biased or academically unsuitable recommendations.
+Testing was another important learning experience. Passing the unit and functional tests gave me confidence that the technical workflow operated as expected. However, I also learned that technical tests answer only part of the evaluation question. A system can execute correctly while still producing weak, biased or academically unsuitable recommendations.
 
 This distinction helped me understand the difference between software correctness and output quality. A more complete evaluation would need to involve students, research supervisors and academic-methodology specialists.
 
@@ -34,7 +38,7 @@ The group project also developed my understanding of virtual teamwork. Working i
 
 At times, uncertainty about project ownership and scope created frustration. I found that when roles were not clearly documented, it became more difficult to understand what each person was responsible for and how the individual contributions fitted together.
 
-This affected my behaviour by making me focus more strongly on documenting my own contribution and ensuring that the final individual work could be clearly distinguished from the group project.
+This affected my behaviour by making me focus more strongly on documenting my own contribution while continuing to engage with the shared project. It also helped me ensure that the final individual work could be clearly distinguished from the group submission.
 
 The experience showed me that effective teamwork requires more than attending meetings. Decisions, responsibilities, deadlines and dependencies need to be recorded. I now recognise the value of using clearer role allocation, meeting notes and action tracking from the beginning of a project.
 
@@ -43,6 +47,8 @@ The module also changed my understanding of ethical issues in intelligent-agent 
 For example, a research-planning agent may produce recommendations that appear authoritative but are influenced by training-data patterns or system assumptions. It may also recommend a methodology without explaining why it is suitable.
 
 This creates a risk of student overreliance. The system should therefore support academic judgement rather than replace independent research or supervisor guidance.
+
+This reflects the principle that AI risks should be considered throughout design, testing and deployment rather than treated only as a final compliance exercise (National Institute of Standards and Technology, 2023).
 
 ## Now what?
 
