@@ -2,67 +2,71 @@
 
 This page summarises my main contributions to the collaborative discussion forums completed during the Intelligent Agents module.
 
-The discussions helped me develop my understanding of intelligent agents, ethical issues, teamwork and critical analysis.
+The discussions developed my critical analysis, ethical awareness and ability to engage constructively with other students in a virtual learning environment.
 
 ---
 
-## Discussion 1: [Insert discussion title]
+## Discussion 1: Ethical Issues Associated with Deep Learning
 
 ### Topic
 
-Briefly explain what the discussion was about.
+This discussion examined the ethical challenges created by deep learning systems, particularly in relation to misinformation, cybersecurity, privacy and the difficulty of distinguishing authentic content from AI-generated material.
 
-### My initial contribution
+### My Initial Contribution
 
-Summarise the main argument you made in your original post.
+My initial contribution argued that deep learning creates a dual-use problem. The same capabilities that support legitimate purposes, such as threat analysis and productivity, can also be used to create convincing phishing messages, malicious code and misleading digital content.
 
-### Engagement with other students
+I argued that developers must consider not only the intended use of a system but also the foreseeable ways in which it could be misused.
 
-Explain which student contributions you responded to and what points you discussed.
+### Engagement with Other Students
 
-### What I learned
+I responded to peer contributions concerning non-consensual deepfakes and the personal harm caused by synthetic media.
 
-Explain how the discussion developed or changed your understanding.
+These responses broadened my original focus, which had concentrated mainly on cybersecurity and misinformation. I recognised that harm can also involve consent, dignity, privacy and psychological impact.
 
-### Connection to the learning outcomes
+### What I Learned
+
+The discussion changed my understanding of AI ethics by showing that technical risk cannot be considered separately from social and personal harm.
+
+I also learned that critical discussion requires engaging with opposing or complementary viewpoints rather than only restating my own position.
+
+### Connection to the Learning Outcomes
 
 This discussion supported:
 
-- Learning Outcome 1: critical analysis of agent-based systems.
-- Learning Outcome 4: effective participation in a virtual learning environment.
+- Learning Outcome 3: consideration of legal, social, ethical and professional issues.
+- Learning Outcome 4: effective participation in a virtual professional environment.
 
 ### Evidence
-
-Add a screenshot or link to your discussion contribution here.
 
 ![Discussion 1 evidence](evidence/forum/discussion-1.png)
 
 ---
 
-## Discussion 2: [Insert discussion title]
+## Discussion 2: [Insert Real Discussion Title]
 
 ### Topic
 
-Briefly explain what the discussion was about.
+[Explain what the discussion was about.]
 
-### My initial contribution
+### My Initial Contribution
 
-Summarise your main argument.
+[Summarise your real argument.]
 
-### Engagement with other students
+### Engagement with Other Students
 
-Explain how you responded to your peers.
+[Explain who you responded to and what you discussed.]
 
-### What I learned
+### What I Learned
 
-Explain what you learned from the discussion.
+[Explain how the discussion changed or developed your understanding.]
 
-### Connection to the learning outcomes
+### Connection to the Learning Outcomes
 
 This discussion supported:
 
-- Learning Outcome 1: critical analysis.
-- Learning Outcome 4: communication and collaboration.
+- [Insert correct learning outcome]
+- [Insert correct learning outcome]
 
 ### Evidence
 
@@ -72,6 +76,6 @@ This discussion supported:
 
 ## Overall Reflection
 
-The collaborative discussions helped me improve my ability to communicate technical and ethical ideas clearly.
+The collaborative discussions improved my ability to communicate technical and ethical ideas clearly, respond constructively to peers and reconsider my original assumptions.
 
-They also encouraged me to consider alternative perspectives and critically evaluate my original assumptions.
+They also demonstrated that learning in a virtual environment depends on active engagement rather than simply posting an initial response.
