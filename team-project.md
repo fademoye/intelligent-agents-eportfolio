@@ -2,89 +2,99 @@
 
 ## Project Overview
 
-ResearchMate was a collaborative design project focused on developing a hybrid multi-agent system for academic research automation.
+ResearchMate was a collaborative group project focused on designing a hybrid multi agent system for academic research automation.
 
-The proposed system was designed to support users by:
+The proposed system was intended to help students and researchers manage selected stages of academic research by:
 
-- receiving an academic research query;
-- decomposing the query into structured subtasks;
-- retrieving relevant academic sources;
-- processing and summarising retrieved information;
-- ranking sources for relevance and credibility;
-- removing duplicate results;
-- presenting the final output in a structured format.
+1. Receiving a research query.
+2. Dividing the query into structured subtasks.
+3. Retrieving relevant academic sources.
+4. Processing and summarising information.
+5. Ranking sources for relevance and credibility.
+6. Removing duplicate results.
+7. Producing structured outputs.
 
-A multi-agent approach was selected because academic research involves different types of tasks that require different capabilities. Dividing the workflow across specialised agents supported modularity, clearer separation of responsibilities, improved testability and easier future development.
+The project focused on the design of the proposed system rather than the development of a fully operational production system.
+
+A multi agent approach was selected because academic research involves several different tasks requiring different capabilities. Dividing these responsibilities across specialist agents supported modularity, separation of concerns, maintainability and future development.
 
 ## Team Members
 
-- Frank Ademoye
-- Alix
-- Mosleh
-- Hamad
+1. Frank Ademoye
+2. Alixandria Ali
+3. Mosleh Ali Nakib
+4. Hamad Abdullah M KH Al Jabir
+
+## My Role
+
+My agreed role was Team Lead and Project Coordinator.
+
+This role was formally recorded in the project kick off document and the team contract.
+
+My responsibilities included:
+
+1. Coordinating the team.
+2. Organising meetings.
+3. Managing timelines and deadlines.
+4. Supporting the allocation of responsibilities.
+5. Reviewing the assignment requirements.
+6. Combining and refining the final report.
+7. Proofreading the completed work.
+8. Supporting final quality checks.
+9. Managing the final submission.
 
 ## My Individual Contribution
 
 My contribution to the ResearchMate group project included:
 
-- participating in virtual team meetings and design discussions;
-- researching intelligent-agent and multi-agent approaches;
-- contributing to discussions about the overall ResearchMate workflow;
-- reviewing how planning, retrieval, processing, ranking and output functions could interact;
-- helping distinguish the user-facing research journey from the underlying technical agent workflow;
-- contributing to project documentation;
-- reviewing and supporting preparation of presentation material;
-- participating in peer-review activity;
-- contributing to discussions about project scope, responsibilities and delivery.
+1. Participating in virtual meetings and design discussions.
+2. Helping establish the project structure and delivery approach.
+3. Reviewing the assignment brief and marking requirements.
+4. Supporting the allocation of project roles and deliverables.
+5. Contributing to discussions about the ResearchMate workflow.
+6. Reviewing how the Planning, Retrieval, Processing, Ranking and Storage Agents would interact.
+7. Helping distinguish the user journey from the technical agent workflow.
+8. Consolidating material into the final report structure.
+9. Reviewing the report for clarity, flow, criticality and word count.
+10. Supporting the final review and submission process.
 
-My main focus was understanding how the proposed system should move from an initial user query through planning, retrieval, processing and final output.
+My leadership contribution focused on maintaining progress, coordinating shared work and helping the team align the final submission with the assessment requirements.
 
-I also contributed to discussions about how the broader group concept could be presented clearly and how the system should support, rather than replace, academic judgement.
-
-The project was collaborative, so the final architecture and design proposal represented shared group work rather than the work of one individual.
+The final architecture and group proposal represented collaborative work. I do not claim sole ownership of the technical design or the work completed by other team members.
 
 ## System Architecture
 
-ResearchMate was designed as a cooperative hierarchical multi-agent system containing five specialised agents:
+ResearchMate was designed as a cooperative hierarchical multi agent system containing five main specialist agents:
 
-- Planning Agent;
-- Retrieval Agent;
-- Processing Agent;
-- Ranking Agent;
-- Storage Agent.
+1. Planning Agent
+2. Retrieval Agent
+3. Processing Agent
+4. Ranking Agent
+5. Storage Agent
 
-The Planning Agent acted as the main coordinator. It received the user’s research query, decomposed it into ordered subtasks and directed the subordinate agents.
+The Planning Agent acted as the main coordinator.
+
+It was intended to receive the user query, divide it into ordered tasks and direct the other agents.
 
 The architecture combined deliberative and reactive approaches.
 
-The Planning Agent used a deliberative approach informed by the Belief–Desire–Intention model:
+The Planning Agent used a deliberative approach informed by the Belief, Desire and Intention model.
 
-- beliefs represented the user query and retrieved context;
-- desires represented the intended research outcome;
-- intentions represented the specific subtasks assigned to the other agents.
+In this design:
+
+1. Beliefs represented the user query and available research context.
+2. Desires represented the intended research outcome.
+3. Intentions represented the tasks selected for execution.
 
 The Retrieval and Processing Agents performed more reactive functions by responding to assigned tasks and available information.
 
-The proposed workflow also used ReAct-style replanning. If the first retrieval attempt produced insufficient results, the Planning Agent could revise the research tasks and repeat part of the workflow.
+The design also included ReAct style replanning. If the initial retrieval results were insufficient, the Planning Agent could revise the tasks and repeat part of the workflow.
 
-A single-agent architecture was rejected because the system needed to perform different kinds of work, including planning, source retrieval, summarisation, ranking, deduplication and output generation.
+## ResearchMate Architecture Diagram
 
-Dividing these responsibilities across specialised agents supported:
+The following diagram shows the proposed ResearchMate hybrid multi agent architecture.
 
-- modularity;
-- maintainability;
-- testability;
-- separation of concerns;
-- clearer system coordination;
-- future extensibility.
-
-## ResearchMate Architecture and Design Evidence
-
-The diagram below shows the proposed ResearchMate hybrid multi-agent architecture developed during the group project.
-
-The Planning Agent coordinates the other agents, while LangGraph was proposed to manage the stateful workflow. The Retrieval Agent connects to academic sources, the Processing Agent filters and summarises results, the Ranking Agent evaluates relevance and credibility, and the Storage Agent produces the final output.
-
-![ResearchMate hybrid multi-agent architecture](https://fademoye.github.io/intelligent-agents-eportfolio/evidence/team/researchmate-architecture.png)
+![ResearchMate hybrid multi agent architecture](https://fademoye.github.io/intelligent-agents-eportfolio/evidence/team/researchmate-architecture.png)
 
 [Open the ResearchMate architecture diagram](https://fademoye.github.io/intelligent-agents-eportfolio/evidence/team/researchmate-architecture.png)
 
@@ -92,585 +102,428 @@ The Planning Agent coordinates the other agents, while LangGraph was proposed to
 
 ### Planning Agent
 
-The Planning Agent was responsible for:
+The Planning Agent was intended to:
 
-- receiving the user query;
-- interpreting the research request;
-- decomposing the request into subtasks;
-- coordinating the other agents;
-- reviewing whether retrieval results were sufficient;
-- triggering replanning where necessary.
+1. Receive the user query.
+2. Interpret the research request.
+3. Divide the request into ordered subtasks.
+4. Coordinate the subordinate agents.
+5. Review whether the retrieved information was sufficient.
+6. Trigger replanning where necessary.
 
 ### Retrieval Agent
 
-The Retrieval Agent was responsible for:
+The Retrieval Agent was intended to:
 
-- searching academic sources;
-- querying multiple academic services;
-- returning relevant papers and metadata;
-- handling partial failure where one source became unavailable.
+1. Search academic services.
+2. Query arXiv, Semantic Scholar and OpenAlex.
+3. Return relevant papers and metadata.
+4. Continue operating if one source became unavailable.
 
 ### Processing Agent
 
-The Processing Agent was responsible for:
+The Processing Agent was intended to:
 
-- processing retrieved content;
-- dividing text into manageable sections;
-- summarising relevant information;
-- preparing information for ranking and presentation.
+1. Process retrieved content.
+2. Divide content into manageable sections.
+3. Summarise relevant information.
+4. Prepare the results for ranking.
 
 ### Ranking Agent
 
-The Ranking Agent was responsible for:
+The Ranking Agent was intended to:
 
-- scoring relevance;
-- assessing source credibility;
-- identifying duplicate results;
-- prioritising stronger sources.
+1. Score relevance.
+2. Assess source credibility.
+3. Identify duplicate results.
+4. Prioritise stronger academic sources.
 
 ### Storage Agent
 
-The Storage Agent was responsible for:
+The Storage Agent was intended to:
 
-- saving the final research results;
-- preparing structured output;
-- supporting formats such as CSV, JSON, Markdown and PDF.
+1. Save the final results.
+2. Prepare structured output.
+3. Support CSV, JSON, Markdown and PDF formats.
+
+## Proposed Workflow
+
+The proposed ResearchMate workflow was:
+
+1. The user submits a research query.
+2. The Planning Agent interprets and divides the query.
+3. The Retrieval Agent searches academic services in parallel.
+4. The Planning Agent reviews the retrieval results.
+5. If the results are insufficient, the tasks are revised.
+6. The Processing Agent summarises the relevant material.
+7. The Ranking Agent assesses relevance, credibility and duplication.
+8. The Storage Agent saves and formats the final output.
+9. The results are returned to the user for review.
 
 ## Tools and Technologies Evaluated
 
-The group evaluated several technologies for the proposed ResearchMate system.
+The group evaluated a range of tools and technologies.
 
-The final design proposed:
+The proposed design included:
 
-- Python for implementation;
-- Llama-3.3-70B through Groq for planning and processing;
-- LangGraph for stateful orchestration;
-- arXiv for computer science and machine-learning preprints;
-- Semantic Scholar for citation and credibility information;
-- OpenAlex for broader interdisciplinary coverage;
-- ChromaDB for local vector storage;
-- BAAI/bge-small embeddings;
-- PyMuPDF for PDF processing;
-- RecursiveCharacterTextSplitter for text chunking;
-- SQLite for persistence;
-- Pydantic for data validation;
-- Chainlit for the user interface;
-- asyncio for concurrent execution;
-- pytest and pytest-asyncio for testing;
-- GitHub for version control.
+1. Python
+2. Llama 3.3 70B through Groq
+3. LangGraph StateGraph
+4. arXiv
+5. Semantic Scholar
+6. OpenAlex
+7. ChromaDB
+8. BAAI bge small embeddings
+9. PyMuPDF
+10. RecursiveCharacterTextSplitter
+11. SQLite
+12. Pydantic
+13. Chainlit
+14. asyncio
+15. pytest
+16. pytest asyncio
+17. GitHub
 
-CrewAI was considered but not selected for the proposed final design because the system required a stateful ReAct replanning cycle rather than mainly role-based task delegation.
+CrewAI was considered but not selected for the proposed final design.
 
-LangGraph was considered more appropriate because it could represent the workflow as a stateful graph with defined nodes, transitions and repeated planning activity.
+The system required a stateful replanning cycle rather than mainly role based task delegation.
 
-Not all technologies were implemented during the group stage. Some formed part of the proposed architecture and future development plan.
+LangGraph was considered more suitable because it could represent the workflow through explicit nodes, transitions and repeated planning activity.
 
-## Retrieval and Processing Design
+Not all of these technologies were implemented during the group stage. Some were proposed for the design and future development.
 
-The design proposed that the Retrieval Agent query three academic services in parallel:
+## Design Rationale
 
-- arXiv;
-- Semantic Scholar;
-- OpenAlex.
+A single agent structure was considered less suitable because one agent would have needed to perform planning, retrieval, processing, ranking, deduplication, storage and output generation.
 
-Parallel retrieval was intended to reduce waiting time and improve source coverage.
+Separating these responsibilities across specialist agents supported:
 
-Each service provided a different benefit:
+1. Modularity.
+2. Maintainability.
+3. Testability.
+4. Separation of concerns.
+5. Clearer responsibilities.
+6. Future extensibility.
 
-- arXiv offered access to machine-learning and computer-science preprints;
-- Semantic Scholar provided citation data that could support credibility scoring;
-- OpenAlex broadened interdisciplinary coverage.
+However, the multi agent design also created additional complexity.
 
-The proposed Processing Agent would summarise retrieved material and prepare it for ranking.
+Each agent required:
 
-ChromaDB was proposed as a lightweight local vector store, while RecursiveCharacterTextSplitter was selected to preserve meaningful text boundaries more effectively than basic fixed-size splitting.
+1. Defined inputs and outputs.
+2. Structured communication.
+3. Error handling.
+4. Testing.
+5. Orchestration.
+6. Clear responsibility boundaries.
+
+This made the proposed architecture technically strong but ambitious for the available assessment timeframe.
 
 ## Development Approach
 
 The group proposed an Agile and iterative development approach.
 
-Each specialist agent would be developed and tested separately before being connected to the wider workflow.
-
-The intended development practices included:
-
-- modular agent development;
-- incremental integration;
-- automated testing;
-- GitHub version control;
-- logging and observability;
-- regular review of agent interaction.
+Each agent would be developed and reviewed separately before integration.
 
 The proposed sequence was:
 
-1. define the system requirements;
-2. design the agent responsibilities;
-3. develop the Planning Agent;
-4. develop the Retrieval Agent;
-5. develop the Processing Agent;
-6. develop the Ranking Agent;
-7. develop the Storage Agent;
-8. integrate the agents through LangGraph;
-9. test the end-to-end workflow;
-10. review system quality and limitations.
+1. Define the problem and requirements.
+2. Agree the agent responsibilities.
+3. Design the overall architecture.
+4. Develop the Planning Agent.
+5. Develop the Retrieval Agent.
+6. Develop the Processing Agent.
+7. Develop the Ranking Agent.
+8. Develop the Storage Agent.
+9. Integrate the agents using LangGraph.
+10. Test the complete workflow.
+11. Evaluate performance, limitations and risks.
 
 ## Technical Risks and Mitigation
 
 ### LLM Hallucinations
 
-A major risk was that the language model could generate confident statements that were not supported by academic evidence.
+The system could produce confident statements that were not supported by academic evidence.
 
-The proposed mitigation was to restrict processing to information retrieved from trusted academic services.
+The proposed mitigation was to restrict processing to information returned from trusted academic services and use the Ranking Agent to reduce the prominence of weak sources.
 
-The Ranking Agent would also reduce the prominence of weak results through credibility and relevance scoring.
+### Context Limitations
 
-### Context-Window Limitations
+Large collections of full text academic material could exceed practical model limits and reduce output quality.
 
-A large collection of full-text papers could exceed the model’s practical context limits and reduce output quality.
+The initial design therefore focused on abstracts and smaller relevant passages.
 
-The proposed system therefore focused initially on abstracts and smaller relevant sections.
+### Agent Coordination
 
-A future full-text version would use vector retrieval to return only the most relevant passages.
-
-### Agent-Coordination Complexity
-
-Five interacting agents could create type mismatches, unclear message formats and failures that were difficult to trace.
+Five interacting agents increased the risk of message mismatches, communication failures and difficult debugging.
 
 Pydantic was proposed to enforce structured contracts between agents.
 
-LangGraph would also make the agent sequence and replanning loop explicit.
+LangGraph would also make the workflow and replanning cycle explicit.
 
-### Latency and External Dependencies
+### External Services
 
-The system depended on external academic APIs and an external language-model service.
+The system depended on academic APIs and an external language model service.
 
-Any of these services could fail, become unavailable or impose rate limits.
+These services could fail, become unavailable or impose usage limits.
 
 The proposed mitigation included:
 
-- parallel retrieval;
-- exception handling for individual services;
-- limits on concurrent calls;
-- continuation where one source failed;
-- logging to support diagnosis.
+1. Parallel retrieval.
+2. Exception handling.
+3. Continuation where one source failed.
+4. Limits on concurrent calls.
+5. System logging.
 
 ### Source Credibility
 
 Not every retrieved source would have equal academic value.
 
-The Ranking Agent was therefore designed to consider relevance, citation information and duplication before the results were returned.
+The Ranking Agent was intended to assess relevance, citation information and duplication before results were returned.
+
+## Ethical and Professional Considerations
+
+ResearchMate was intended to support academic research rather than replace independent judgement.
+
+Users would still need to:
+
+1. Verify sources.
+2. Assess relevance.
+3. Consult academic literature.
+4. Follow university requirements.
+5. Obtain supervisor feedback.
+
+A responsibly developed version would require:
+
+1. Source verification.
+2. Clear explanations.
+3. Privacy controls.
+4. Appropriate handling of user data.
+5. Human review.
+6. Warnings about limitations.
+7. Monitoring of unsuitable outputs.
+8. Protection against student overreliance.
 
 ## Teamwork and Collaboration
 
-The project required virtual collaboration, communication, shared decision-making and allocation of responsibilities.
+The project required virtual communication, shared decision making and clear allocation of responsibilities.
 
 The team discussed:
 
-- the academic research problem;
-- intended users;
-- system scope;
-- agent architecture;
-- agent responsibilities;
-- technology choices;
-- risk and mitigation;
-- presentation structure;
-- division of work;
-- assessment deadlines.
+1. The project problem.
+2. The intended users.
+3. The agent architecture.
+4. Agent responsibilities.
+5. Technology choices.
+6. Risks and mitigation.
+7. Report structure.
+8. Meeting schedules.
+9. Individual responsibilities.
+10. Final review and submission.
 
-The team needed to balance technical ambition with the available time.
+The group used virtual meetings, the University discussion forum and shared documents to coordinate the work.
 
-The initial concept was broad and involved multiple agents, external APIs, orchestration, vector storage and an interactive interface.
+## Evidence of My Leadership and Individual Contribution
 
-This created a risk that the design could become too large for the assessment timeframe.
+My role as Team Lead and Project Coordinator was formally documented in the kick off meeting document and the team contract.
 
-The group therefore needed to distinguish between:
+These documents provide evidence that I was responsible for coordinating meetings, managing timelines, combining the report, proofreading and supporting submission management.
 
-- the full proposed system;
-- the design evidence required for the assessment;
-- the narrower individual implementation completed later.
+### Kick Off Meeting Document
+
+The kick off document established:
+
+1. The ResearchMate project concept.
+2. The proposed multi agent structure.
+3. The group roles.
+4. The proposed meeting schedule.
+5. The expected deliverables.
+6. The final submission goals.
+
+It identified me as Team Lead and Project Coordinator.
+
+[View the Group A Kick Off Meeting document](https://fademoye.github.io/intelligent-agents-eportfolio/evidence/team/GROUP%20A%20%E2%80%93%20KICK%20OFF%20MEETING%20DISCUSSION%20v1.3%20.docx.pdf)
+
+### Team Contract
+
+The team contract recorded:
+
+1. The group goals.
+2. Attendance and communication expectations.
+3. Collaborative decision making.
+4. Meeting arrangements.
+5. Agreed roles.
+6. Responsibilities.
+7. Procedures for managing difficulties.
+
+It confirmed my responsibility for coordinating meetings, managing timelines, combining the report, proofreading and managing the submission process.
+
+[View the Group A Team Contract](https://fademoye.github.io/intelligent-agents-eportfolio/evidence/team/Team%20Contract%20Template%20-%20Group%20A%20.docx%20%281%29.pdf)
 
 ## Challenges
 
 ### Managing Scope
 
-The original ResearchMate concept was ambitious.
+The proposed architecture was ambitious.
 
-It included multiple specialist agents, academic retrieval, credibility ranking, vector storage, iterative replanning and several output formats.
+It involved several agents, external services, orchestration, storage, testing and an interface.
 
-This created a tension between designing a strong multi-agent system and producing a realistic solution within the available time.
+This created tension between technical ambition and realistic delivery.
 
-I learned that scope should be agreed early and divided into essential, desirable and future functions.
+I learned that scope should be defined early and separated into essential requirements, desirable additions and future development.
 
 ### Coordinating Virtual Work
 
-Virtual collaboration made it more difficult to maintain visibility of progress.
+Differences in availability sometimes affected meetings and progress.
 
-Where decisions, actions or owners were not recorded clearly, it became harder to understand who was responsible for the next task.
+This showed me the importance of documenting decisions, responsibilities and deadlines.
 
-This showed me the value of:
+It also demonstrated the value of shared documents and regular written updates.
 
-- written meeting notes;
-- clear task ownership;
-- agreed deadlines;
-- regular progress reviews;
-- shared document control.
+### Maintaining Clear Ownership
+
+Because several team members contributed to the same proposal, it was important to distinguish individual responsibility from shared group work.
+
+The kick off document and team contract helped clarify responsibilities.
+
+However, I recognised that task ownership should also be reviewed throughout the project rather than agreed only at the beginning.
 
 ### Distinguishing Design from Implementation
 
-Another challenge was ensuring that proposed technologies were not described as though they had already been implemented.
+The group proposal included technologies and capabilities that were not fully implemented.
 
-The group design included LangGraph, ChromaDB, Chainlit, multiple academic APIs and several specialist agents.
+It was important to describe these accurately as proposed features rather than completed functionality.
 
-However, the later individual implementation used a more focused modular Python prototype.
-
-This distinction was important for accurate and ethical reporting.
-
-### Balancing Technical and User Perspectives
-
-The team also needed to distinguish between the user journey and the technical workflow.
-
-The user needed a clear and simple research-support experience, while the proposed technical system involved several internal agents and services.
-
-This helped me understand that a technically complex system should still present a simple, understandable and controlled experience to the user.
+This distinction supported honest and professional reporting.
 
 ## What I Learned
 
-The project strengthened my understanding of multi-agent design.
+The project strengthened my understanding of multi agent system design.
 
-I learned that a multi-agent system is not simply a collection of Python files. Each agent needs:
+I learned that separate software components do not automatically form a genuine multi agent system.
 
-- a defined responsibility;
-- clear inputs and outputs;
-- structured communication;
-- a coordination mechanism;
-- appropriate error handling;
-- a reason for existing as a separate component.
+Each agent needs:
 
-I also learned the difference between reactive, deliberative and hybrid approaches.
+1. A clear responsibility.
+2. Defined inputs and outputs.
+3. A reason for operating separately.
+4. A communication mechanism.
+5. A coordination process.
+6. Appropriate error handling.
 
-The ResearchMate design showed how a deliberative Planning Agent could coordinate more reactive specialist agents.
+The project also improved my understanding of leadership in a virtual environment.
 
-The project improved my understanding of technical decision-making.
+Leadership involved:
 
-Rather than listing technologies, the group needed to consider why one tool was more suitable than another.
+1. Establishing structure.
+2. Supporting communication.
+3. Clarifying responsibilities.
+4. Maintaining progress.
+5. Reviewing quality.
+6. Helping the team meet the submission requirements.
 
-For example, LangGraph was selected because of the need for stateful control and replanning, while CrewAI was considered less suitable for that specific requirement.
+I also recognised that leadership does not mean completing every task personally.
 
-The project also improved my awareness of responsible AI design.
+It requires effective delegation, support and shared accountability.
 
-A system that supports academic work must consider:
+In future group projects, I would introduce a responsibility matrix at the beginning.
 
-- hallucinations;
-- source quality;
-- transparency;
-- user overreliance;
-- privacy;
-- data handling;
-- academic integrity;
-- human review.
+Each activity would have:
 
-I also learned that effective virtual teamwork requires more than attending meetings.
+1. A named owner.
+2. A required output.
+3. A deadline.
+4. A review point.
+5. A recorded status.
 
-It requires:
+## Evaluation of My Leadership
 
-- clear role allocation;
-- documented actions;
-- visible progress;
-- shared ownership;
-- regular communication;
-- honest separation of individual and group work.
+The kick off document and team contract show that I held a formal coordination role.
 
-In future projects, I would establish a responsibility matrix during the first meeting, assign named owners to each task and review progress against written actions at every meeting.
+My contribution involved helping the team establish the project structure, organise responsibilities, maintain communication and prepare the final report.
+
+The experience developed my organisation, communication and project coordination skills.
+
+It also highlighted areas for improvement.
+
+I could have introduced clearer task tracking earlier and delegated integration activities more systematically.
+
+In future projects, I would review task ownership during every meeting and identify risks to delivery before they became urgent.
 
 ## Distinction Between Group and Individual Work
 
 ResearchMate was developed as a collaborative group concept and design proposal.
 
-The group work covered:
+The group work included:
 
-- the problem definition;
-- the proposed multi-agent architecture;
-- agent responsibilities;
-- technology evaluation;
-- risk analysis;
-- development planning;
-- graphical system design.
+1. The problem definition.
+2. The proposed architecture.
+3. Agent responsibilities.
+4. Technology evaluation.
+5. Risk analysis.
+6. Development planning.
+7. System diagrams.
+8. The final group report.
 
 The Week 11 implementation presented elsewhere in this portfolio was my individual prototype.
 
-The group project informed my understanding of:
+The group project informed my understanding of the research problem, architecture and workflow.
 
-- the problem;
-- the broader architecture;
-- the research workflow;
-- the relationship between planning, processing and output.
-
-The individual coding, testing, implementation screenshots and repository evidence were completed separately.
-
-This distinction is important because the group design was broader than the final individual prototype.
+However, the individual source code, testing and implementation evidence were completed separately.
 
 ## Connection to Learning Outcomes
 
 ### Learning Outcome 1
 
-The project supported my ability to identify and critically analyse agent-based architectures.
+The project supported my ability to identify and critically analyse agent architectures.
 
-I compared single-agent and multi-agent approaches and considered reactive, deliberative and hybrid designs.
-
-The group selected a hybrid multi-agent architecture because the Planning Agent required deliberative reasoning, while Retrieval and Processing functions could operate more reactively.
+I considered single agent, multi agent, reactive, deliberative and hybrid approaches.
 
 Supporting evidence:
 
-- [Week 7 System Design](week-7-design.html)
-- [ResearchMate Architecture Diagram](https://fademoye.github.io/intelligent-agents-eportfolio/evidence/team/researchmate-architecture.png)
-- [Critical Project Evaluation](project-evaluation.html)
+1. [Week 7 System Design](week-7-design.html)
+2. [ResearchMate Architecture Diagram](https://fademoye.github.io/intelligent-agents-eportfolio/evidence/team/researchmate-architecture.png)
+3. [Critical Project Evaluation](project-evaluation.html)
 
 ### Learning Outcome 2
 
-The project applied intelligent-agent techniques to the real-world problem of academic research automation.
+The project applied intelligent agent techniques to academic research automation.
 
-The design considered technical uncertainty relating to source quality, hallucinations, API failure, context limits and coordination between agents.
+The design also considered uncertainty involving source quality, hallucinations, external service failure and agent coordination.
 
 Supporting evidence:
 
-- [ResearchMate Architecture Diagram](https://fademoye.github.io/intelligent-agents-eportfolio/evidence/team/researchmate-architecture.png)
-- [Week 11 Individual Implementation](week-11-implementation.html)
-- [Critical Project Evaluation](project-evaluation.html)
+1. [Week 7 System Design](week-7-design.html)
+2. [Week 11 Final Implementation](week-11-implementation.html)
+3. [Critical Project Evaluation](project-evaluation.html)
 
 ### Learning Outcome 3
 
-The project required critical evaluation of software tools including Python, LangGraph, Llama, academic APIs, ChromaDB, Pydantic, Chainlit and pytest.
-
-The design also considered responsible deployment, academic reliability, transparency, data privacy and human review.
+The project required the evaluation of software tools and consideration of legal, ethical, professional and technical risks.
 
 Supporting evidence:
 
-- [Week 7 System Design](week-7-design.html)
-- [Reflective Case Studies](reflective-case-studies.html)
-- [Critical Project Evaluation](project-evaluation.html)
+1. [Week 7 System Design](week-7-design.html)
+2. [Reflective Case Studies](reflective-case-studies.html)
+3. [Critical Project Evaluation](project-evaluation.html)
 
 ### Learning Outcome 4
 
-The project developed my skills in virtual teamwork, communication, shared decision-making, documentation and project organisation.
-
-It also helped me understand the importance of clear ownership and evidence of individual contribution within collaborative work.
+The project developed my skills in virtual teamwork, communication, leadership, shared decision making and project organisation.
 
 Supporting evidence:
 
-- [Team Meeting Notes](team-meetings.html)
-- [Final Reflection](final-reflection.html)
-
-## Evidence
-
-- [ResearchMate Architecture Diagram](https://fademoye.github.io/intelligent-agents-eportfolio/evidence/team/researchmate-architecture.png)
-- [Week 7 System Design](week-7-design.html)
-- [Week 11 Individual Implementation](week-11-implementation.html)
-- [Team Meeting Notes](team-meetings.html)
-- [Critical Project Evaluation](project-evaluation.html)
-- [Final Reflection](final-reflection.html)
-
-Additional group communication, peer-review and shared planning evidence should only be added here when the relevant files have been uploaded and linked.
-
-### Coordinating Virtual Work
-
-Virtual collaboration made it more difficult to maintain visibility of progress.
-
-Where decisions, actions or owners were not recorded clearly, it became harder to understand who was responsible for the next task.
-
-This showed me the value of:
-
-- written meeting notes;
-- clear task ownership;
-- agreed deadlines;
-- regular progress reviews;
-- shared document control.
-
-### Distinguishing Design from Implementation
-
-Another challenge was ensuring that proposed technologies were not described as though they had already been implemented.
-
-The group design included LangGraph, ChromaDB, Chainlit, multiple academic APIs and several specialist agents.
-
-However, the later individual implementation used a more focused modular Python prototype.
-
-This distinction was important for accurate and ethical reporting.
-
-### Balancing Technical and User Perspectives
-
-The team also needed to distinguish between the user journey and the technical workflow.
-
-The user needed a clear and simple research-support experience, while the proposed technical system involved several internal agents and services.
-
-This helped me understand that a technically complex system should still present a simple, understandable and controlled experience to the user.
-
-## What I Learned
-
-The project strengthened my understanding of multi-agent design.
-
-I learned that a multi-agent system is not simply a collection of Python files. Each agent needs:
-
-- a defined responsibility;
-- clear inputs and outputs;
-- structured communication;
-- a coordination mechanism;
-- appropriate error handling;
-- a reason for existing as a separate component.
-
-I also learned the difference between reactive, deliberative and hybrid approaches.
-
-The ResearchMate design showed how a deliberative Planning Agent could coordinate more reactive specialist agents.
-
-The project improved my understanding of technical decision-making.
-
-Rather than listing technologies, the group needed to consider why one tool was more suitable than another.
-
-For example, LangGraph was selected because of the need for stateful control and replanning, while CrewAI was considered less suitable for that specific requirement.
-
-The project also improved my awareness of responsible AI design.
-
-A system that supports academic work must consider:
-
-- hallucinations;
-- source quality;
-- transparency;
-- user overreliance;
-- privacy;
-- data handling;
-- academic integrity;
-- human review.
-
-I also learned that effective virtual teamwork requires more than attending meetings.
-
-It requires:
-
-- clear role allocation;
-- documented actions;
-- visible progress;
-- shared ownership;
-- regular communication;
-- honest separation of individual and group work.
-
-In future projects, I would establish a responsibility matrix during the first meeting, assign named owners to each task and review progress against written actions at every meeting.
-
-## Distinction Between Group and Individual Work
-
-ResearchMate was developed as a collaborative group concept and design proposal.
-
-The group work covered:
-
-- the problem definition;
-- the proposed multi-agent architecture;
-- agent responsibilities;
-- technology evaluation;
-- risk analysis;
-- development planning;
-- graphical system design.
-
-The Week 11 implementation presented elsewhere in this portfolio was my individual prototype.
-
-The group project informed my understanding of:
-
-- the problem;
-- the broader architecture;
-- the research workflow;
-- the relationship between planning, processing and output.
-
-The individual coding, testing, implementation screenshots and repository evidence were completed separately.
-
-This distinction is important because the group design was broader than the final individual prototype.
-
-## Connection to Learning Outcomes
-
-### Learning Outcome 1
-
-The project supported my ability to identify and critically analyse agent-based architectures.
-
-I compared single-agent and multi-agent approaches and considered reactive, deliberative and hybrid designs.
-
-The group selected a hybrid multi-agent architecture because the Planning Agent required deliberative reasoning, while Retrieval and Processing functions could operate more reactively.
-
-Supporting evidence:
-
-- [Week 7 System Design](week-7-design.html)
-- [ResearchMate Architecture Diagram](https://fademoye.github.io/intelligent-agents-eportfolio/evidence/team/researchmate-architecture.png)
-- [Critical Project Evaluation](project-evaluation.html)
-
-### Learning Outcome 2
-
-The project applied intelligent-agent techniques to the real-world problem of academic research automation.
-
-The design considered technical uncertainty relating to source quality, hallucinations, API failure, context limits and coordination between agents.
-
-Supporting evidence:
-
-- [ResearchMate Architecture Diagram](https://fademoye.github.io/intelligent-agents-eportfolio/evidence/team/researchmate-architecture.png)
-- [Week 11 Individual Implementation](week-11-implementation.html)
-- [Critical Project Evaluation](project-evaluation.html)
-
-### Learning Outcome 3
-
-The project required critical evaluation of software tools including Python, LangGraph, Llama, academic APIs, ChromaDB, Pydantic, Chainlit and pytest.
-
-The design also considered responsible deployment, academic reliability, transparency, data privacy and human review.
-
-Supporting evidence:
-
-- [Week 7 System Design](week-7-design.html)
-- [Reflective Case Studies](reflective-case-studies.html)
-- [Critical Project Evaluation](project-evaluation.html)
-
-### Learning Outcome 4
-
-The project developed my skills in virtual teamwork, communication, shared decision-making, documentation and project organisation.
-
-It also helped me understand the importance of clear ownership and evidence of individual contribution within collaborative work.
-
-Supporting evidence:
-
-- [Team Meeting Notes](team-meetings.html)
-- [Final Reflection](final-reflection.html)
-
-## Evidence
-
-### ResearchMate Architecture PNG
-
-![ResearchMate architecture evidence](https://fademoye.github.io/intelligent-agents-eportfolio/evidence/team/researchmate-architecture.png)
-
-[Open the ResearchMate architecture PNG](https://fademoye.github.io/intelligent-agents-eportfolio/evidence/team/researchmate-architecture.png)
-
-### Week 11 System Running PNG
-
-![Week 11 system running](https://fademoye.github.io/intelligent-agents-eportfolio/evidence/implementation/screenshot%20of%20the%20system%20running%3B.png)
-
-[Open the system-running PNG](https://fademoye.github.io/intelligent-agents-eportfolio/evidence/implementation/screenshot%20of%20the%20system%20running%3B.png)
-
-### Week 11 User Input PNG
-
-![Week 11 user input](https://fademoye.github.io/intelligent-agents-eportfolio/evidence/implementation/screenshot%20of%20user%20input%3B.png)
-
-[Open the user-input PNG](https://fademoye.github.io/intelligent-agents-eportfolio/evidence/implementation/screenshot%20of%20user%20input%3B.png)
-
-### Week 11 Generated Output PNG
-
-![Week 11 generated output](https://fademoye.github.io/intelligent-agents-eportfolio/evidence/implementation/screenshot%20of%20generated%20output%3B.png)
-
-[Open the generated-output PNG](https://fademoye.github.io/intelligent-agents-eportfolio/evidence/implementation/screenshot%20of%20generated%20output%3B.png)
-
-### Week 11 Project Structure PNG
-
-![Week 11 project structure](https://fademoye.github.io/intelligent-agents-eportfolio/evidence/implementation/project-structure.png)
-
-[Open the project-structure PNG](https://fademoye.github.io/intelligent-agents-eportfolio/evidence/implementation/project-structure.png)
-
-### Week 11 Testing PNG
-
-![Eight successful pytest results](https://fademoye.github.io/intelligent-agents-eportfolio/evidence/implementation/tests_passed_8.png)
-
-[Open the testing PNG](https://fademoye.github.io/intelligent-agents-eportfolio/evidence/implementation/tests_passed_8.png)
-
-### Additional Portfolio Evidence
-
-- [Week 7 System Design](week-7-design.html)
-- [Week 11 Individual Implementation](week-11-implementation.html)
-- [Team Meeting Notes](team-meetings.html)
-- [Critical Project Evaluation](project-evaluation.html)
-- [Final Reflection](final-reflection.html)
+1. [Group A Kick Off Meeting Document](https://fademoye.github.io/intelligent-agents-eportfolio/evidence/team/GROUP%20A%20%E2%80%93%20KICK%20OFF%20MEETING%20DISCUSSION%20v1.3%20.docx.pdf)
+2. [Group A Team Contract](https://fademoye.github.io/intelligent-agents-eportfolio/evidence/team/Team%20Contract%20Template%20-%20Group%20A%20.docx%20%281%29.pdf)
+3. [Team Meeting Notes](team-meetings.html)
+4. [Final Reflection](final-reflection.html)
+
+## Supporting Evidence
+
+1. [Group A Kick Off Meeting Document](https://fademoye.github.io/intelligent-agents-eportfolio/evidence/team/GROUP%20A%20%E2%80%93%20KICK%20OFF%20MEETING%20DISCUSSION%20v1.3%20.docx.pdf)
+2. [Group A Team Contract](https://fademoye.github.io/intelligent-agents-eportfolio/evidence/team/Team%20Contract%20Template%20-%20Group%20A%20.docx%20%281%29.pdf)
+3. [ResearchMate Architecture Diagram](https://fademoye.github.io/intelligent-agents-eportfolio/evidence/team/researchmate-architecture.png)
+4. [Week 7 System Design](week-7-design.html)
+5. [Week 11 Final Implementation](week-11-implementation.html)
+6. [Team Meeting Notes](team-meetings.html)
+7. [Critical Project Evaluation](project-evaluation.html)
+8. [Final Reflection](final-reflection.html)
