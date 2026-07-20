@@ -1,24 +1,9 @@
 # Team Meeting Notes
 
-This page summarises the main meetings, decisions and actions from the ResearchMate group project.
+The ResearchMate team used virtual meetings and shared documents to coordinate the project. Early meetings established the project scope, roles and architecture. Later meetings reviewed progress, allocated report sections and resolved gaps. Final meetings focused on integrating contributions, checking the work against the assessment requirements and preparing the submission.
 
-| Date | Attendees | Main topics discussed | Decisions made | My actions |
-|---|---|---|---|---|
-| [Insert actual date] | [Insert actual attendees] | Initial idea, target users and project problem | [Insert actual decisions] | [Insert what you personally agreed to do] |
-| [Insert actual date] | [Insert actual attendees] | Architecture, agent roles and technologies | [Insert actual decisions] | [Insert your personal actions] |
-| [Insert actual date] | [Insert actual attendees] | Progress, presentation and final tasks | [Insert actual decisions] | [Insert your personal actions] |
+## Supporting Evidence
 
-## Evidence
-
-- Meeting screenshots
-- Calendar or video-call invitations
-- WhatsApp or Teams messages
-- Shared notes
-- Action lists
-- Group presentation planning
-
-## Reflection
-
-The meetings showed me that virtual teamwork requires clear ownership, documented decisions and follow-up actions.
-
-Where responsibilities were not recorded clearly, it became harder to track progress and distinguish individual contributions. In future group projects, I would use a shared action log with named owners and deadlines from the first meeting.
+1. [Kick Off Meeting Document](https://fademoye.github.io/intelligent-agents-eportfolio/evidence/team/GROUP%20A%20%E2%80%93%20KICK%20OFF%20MEETING%20DISCUSSION%20v1.3%20.docx.pdf)
+2. [Team Contract](https://fademoye.github.io/intelligent-agents-eportfolio/evidence/team/Team%20Contract%20Template%20-%20Group%20A%20.docx%20%281%29.pdf)
+3. [Team Project](team-project.html)
