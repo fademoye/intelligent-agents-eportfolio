@@ -145,7 +145,7 @@ The final design proposed:
 - Python for implementation;
 - Llama-3.3-70B through Groq for planning and processing;
 - LangGraph for stateful orchestration;
-- arXiv for computer-science and machine-learning preprints;
+- arXiv for computer science and machine-learning preprints;
 - Semantic Scholar for citation and credibility information;
 - OpenAlex for broader interdisciplinary coverage;
 - ChromaDB for local vector storage;
@@ -299,6 +299,176 @@ It included multiple specialist agents, academic retrieval, credibility ranking,
 This created a tension between designing a strong multi-agent system and producing a realistic solution within the available time.
 
 I learned that scope should be agreed early and divided into essential, desirable and future functions.
+
+### Coordinating Virtual Work
+
+Virtual collaboration made it more difficult to maintain visibility of progress.
+
+Where decisions, actions or owners were not recorded clearly, it became harder to understand who was responsible for the next task.
+
+This showed me the value of:
+
+- written meeting notes;
+- clear task ownership;
+- agreed deadlines;
+- regular progress reviews;
+- shared document control.
+
+### Distinguishing Design from Implementation
+
+Another challenge was ensuring that proposed technologies were not described as though they had already been implemented.
+
+The group design included LangGraph, ChromaDB, Chainlit, multiple academic APIs and several specialist agents.
+
+However, the later individual implementation used a more focused modular Python prototype.
+
+This distinction was important for accurate and ethical reporting.
+
+### Balancing Technical and User Perspectives
+
+The team also needed to distinguish between the user journey and the technical workflow.
+
+The user needed a clear and simple research-support experience, while the proposed technical system involved several internal agents and services.
+
+This helped me understand that a technically complex system should still present a simple, understandable and controlled experience to the user.
+
+## What I Learned
+
+The project strengthened my understanding of multi-agent design.
+
+I learned that a multi-agent system is not simply a collection of Python files. Each agent needs:
+
+- a defined responsibility;
+- clear inputs and outputs;
+- structured communication;
+- a coordination mechanism;
+- appropriate error handling;
+- a reason for existing as a separate component.
+
+I also learned the difference between reactive, deliberative and hybrid approaches.
+
+The ResearchMate design showed how a deliberative Planning Agent could coordinate more reactive specialist agents.
+
+The project improved my understanding of technical decision-making.
+
+Rather than listing technologies, the group needed to consider why one tool was more suitable than another.
+
+For example, LangGraph was selected because of the need for stateful control and replanning, while CrewAI was considered less suitable for that specific requirement.
+
+The project also improved my awareness of responsible AI design.
+
+A system that supports academic work must consider:
+
+- hallucinations;
+- source quality;
+- transparency;
+- user overreliance;
+- privacy;
+- data handling;
+- academic integrity;
+- human review.
+
+I also learned that effective virtual teamwork requires more than attending meetings.
+
+It requires:
+
+- clear role allocation;
+- documented actions;
+- visible progress;
+- shared ownership;
+- regular communication;
+- honest separation of individual and group work.
+
+In future projects, I would establish a responsibility matrix during the first meeting, assign named owners to each task and review progress against written actions at every meeting.
+
+## Distinction Between Group and Individual Work
+
+ResearchMate was developed as a collaborative group concept and design proposal.
+
+The group work covered:
+
+- the problem definition;
+- the proposed multi-agent architecture;
+- agent responsibilities;
+- technology evaluation;
+- risk analysis;
+- development planning;
+- graphical system design.
+
+The Week 11 implementation presented elsewhere in this portfolio was my individual prototype.
+
+The group project informed my understanding of:
+
+- the problem;
+- the broader architecture;
+- the research workflow;
+- the relationship between planning, processing and output.
+
+The individual coding, testing, implementation screenshots and repository evidence were completed separately.
+
+This distinction is important because the group design was broader than the final individual prototype.
+
+## Connection to Learning Outcomes
+
+### Learning Outcome 1
+
+The project supported my ability to identify and critically analyse agent-based architectures.
+
+I compared single-agent and multi-agent approaches and considered reactive, deliberative and hybrid designs.
+
+The group selected a hybrid multi-agent architecture because the Planning Agent required deliberative reasoning, while Retrieval and Processing functions could operate more reactively.
+
+Supporting evidence:
+
+- [Week 7 System Design](week-7-design.html)
+- [ResearchMate Architecture Diagram](https://fademoye.github.io/intelligent-agents-eportfolio/evidence/team/researchmate-architecture.png)
+- [Critical Project Evaluation](project-evaluation.html)
+
+### Learning Outcome 2
+
+The project applied intelligent-agent techniques to the real-world problem of academic research automation.
+
+The design considered technical uncertainty relating to source quality, hallucinations, API failure, context limits and coordination between agents.
+
+Supporting evidence:
+
+- [ResearchMate Architecture Diagram](https://fademoye.github.io/intelligent-agents-eportfolio/evidence/team/researchmate-architecture.png)
+- [Week 11 Individual Implementation](week-11-implementation.html)
+- [Critical Project Evaluation](project-evaluation.html)
+
+### Learning Outcome 3
+
+The project required critical evaluation of software tools including Python, LangGraph, Llama, academic APIs, ChromaDB, Pydantic, Chainlit and pytest.
+
+The design also considered responsible deployment, academic reliability, transparency, data privacy and human review.
+
+Supporting evidence:
+
+- [Week 7 System Design](week-7-design.html)
+- [Reflective Case Studies](reflective-case-studies.html)
+- [Critical Project Evaluation](project-evaluation.html)
+
+### Learning Outcome 4
+
+The project developed my skills in virtual teamwork, communication, shared decision-making, documentation and project organisation.
+
+It also helped me understand the importance of clear ownership and evidence of individual contribution within collaborative work.
+
+Supporting evidence:
+
+- [Team Meeting Notes](team-meetings.html)
+- [Final Reflection](final-reflection.html)
+
+## Evidence
+
+- [ResearchMate Architecture Diagram](https://fademoye.github.io/intelligent-agents-eportfolio/evidence/team/researchmate-architecture.png)
+- [Week 7 System Design](week-7-design.html)
+- [Week 11 Individual Implementation](week-11-implementation.html)
+- [Team Meeting Notes](team-meetings.html)
+- [Critical Project Evaluation](project-evaluation.html)
+- [Final Reflection](final-reflection.html)
+
+Additional group communication, peer-review and shared planning evidence should only be added here when the relevant files have been uploaded and linked.
 
 ### Coordinating Virtual Work
 
