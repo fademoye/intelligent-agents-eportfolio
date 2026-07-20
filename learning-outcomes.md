@@ -16,7 +16,7 @@ This learning was applied during the design of ResearchMate, where my group cons
 - [Week 7 System Design](week-7-design.html)
 - [Critical Project Evaluation](project-evaluation.html)
 - [Collaborative Discussion Activities](forum-summaries.html)
-- ResearchMate architecture and design artefacts
+- [ResearchMate Architecture Diagram](evidence/team/researchmate-architecture.png)
 
 ## Learning Outcome 2
 
@@ -31,10 +31,9 @@ The project involved technical risk and uncertainty because the quality of the g
 ### Supporting Evidence
 
 - [Week 11 Final Implementation](week-11-implementation.html)
-- System-generated outputs
-- Unit and functional testing
+- [System Outputs and Implementation Evidence](week-11-implementation.html#implementation-evidence)
+- [Testing Evidence](week-11-implementation.html#testing)
 - [Critical Project Evaluation](project-evaluation.html)
-- Implementation and testing screenshots
 
 ## Learning Outcome 3
 
@@ -49,8 +48,8 @@ They also informed the safeguards and future improvements proposed in my evaluat
 ### Supporting Evidence
 
 - [Week 11 Final Implementation](week-11-implementation.html)
-- Individual GitHub project repository
-- Testing evidence
+- [Individual GitHub Project Repository](PASTE-YOUR-INDIVIDUAL-REPOSITORY-LINK-HERE)
+- [Testing Evidence](week-11-implementation.html#testing)
 - [Reflective Case Studies](reflective-case-studies.html)
 - [Critical Project Evaluation](project-evaluation.html)
 
@@ -68,9 +67,7 @@ The experience also helped me recognise the importance of clearer role allocatio
 
 - [Team Project](team-project.html)
 - [Team Meeting Notes](team-meetings.html)
-- Group communication evidence
-- Peer-review evidence
-- ResearchMate project artefacts
+- [ResearchMate Architecture Diagram](evidence/team/researchmate-architecture.png)
 - [Final Reflection](final-reflection.html)
 
 ## Overall Summary
