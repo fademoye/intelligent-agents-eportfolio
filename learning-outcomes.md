@@ -8,7 +8,7 @@ This page explains how the work included in this e-portfolio demonstrates the fo
 
 During the module, I developed my understanding of reactive, deliberative, hybrid and multi-agent approaches and considered their suitability for different problem contexts.
 
-This learning was applied during the design of ResearchMate, where the group considered how specialised components could work together to support academic research planning. I also evaluated the difference between the broader Week 7 multi-agent design and the more focused modular implementation completed in Week 11.
+This learning was applied during the design of ResearchMate, where my group considered how specialised components could work together to support academic research planning. I also evaluated the difference between the broader Week 7 multi-agent design and the more focused modular implementation completed in Week 11.
 
 ### Supporting evidence
 
