@@ -31,11 +31,11 @@ The project involved technical risk and uncertainty because the quality of the g
 ### Supporting Evidence
 
 - [Week 11 Final Implementation](week-11-implementation.html)
-- [System Running Screenshot](evidence/implementation/system-running.png)
-- [Example User Input Screenshot](evidence/implementation/user-input.png)
-- [Generated Research Plan Screenshot](evidence/implementation/generated-output.png)
+- [System Running Screenshot](evidence/implementation/screenshot%20of%20the%20system%20running%3B.png)
+- [Example User Input Screenshot](evidence/implementation/screenshot%20of%20user%20input%3B.png)
+- [Generated Research Plan Screenshot](evidence/implementation/screenshot%20of%20generated%20output%3B.png)
 - [Project Structure Screenshot](evidence/implementation/project-structure.png)
-- [Passed Pytest Results](evidence/implementation/pytest-passed.png)
+- [Passed Pytest Results](evidence/implementation/tests_passed_8.png)
 - [Critical Project Evaluation](project-evaluation.html)
 
 ## Learning Outcome 3
@@ -51,10 +51,12 @@ They also informed the safeguards and future improvements proposed in my evaluat
 ### Supporting Evidence
 
 - [Week 11 Final Implementation](week-11-implementation.html)
-- [Individual GitHub Project Repository](PASTE-YOUR-INDIVIDUAL-REPOSITORY-LINK-HERE)
+- [Individual GitHub Project Repository](https://github.com/fademoye/LLM-Planning-Agent-Project)
 - [Project Structure Screenshot](evidence/implementation/project-structure.png)
-- [Passed Pytest Results](evidence/implementation/pytest-passed.png)
-- [System Running Screenshot](evidence/implementation/system-running.png)
+- [System Running Screenshot](evidence/implementation/screenshot%20of%20the%20system%20running%3B.png)
+- [Passed Pytest Results](evidence/implementation/tests_passed_8.png)
+- [Presentation Slides](evidence/implementation/Presentation%20slides.pdf)
+- [Presentation Transcript](evidence/implementation/Presentation%20transcript.pdf)
 - [Reflective Case Studies](reflective-case-studies.html)
 - [Critical Project Evaluation](project-evaluation.html)
 
@@ -70,7 +72,7 @@ The experience also helped me recognise the importance of clearer role allocatio
 
 ### Supporting Evidence
 
-- [Team Project](team-project.html)
+- [ResearchMate Team Project](team-project.html)
 - [Team Meeting Notes](team-meetings.html)
 - [ResearchMate Architecture Diagram](evidence/team/researchmate-architecture.png)
 - [Final Reflection](final-reflection.html)
