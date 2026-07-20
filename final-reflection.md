@@ -40,7 +40,7 @@ The group project also developed my understanding of virtual teamwork. Working i
 
 At times, uncertainty about roles and scope created frustration. When responsibilities were not recorded clearly, it became difficult to understand ownership and progress. This encouraged me to document my contribution more carefully and to distinguish the group design from my individual implementation.
 
-I learned that effective teamwork requires more than attending meetings. Decisions, responsibilities and deadlines need to be recorded. Evidence such as meeting notes, task allocations, screenshots and document history should also be collected throughout the project rather than reconstructed at the end.
+I learned that effective teamwork requires more than attending meetings. Decisions, responsibilities and deadlines need to be recorded. Evidence should be collected continuously.
 
 The module changed my understanding of responsible artificial intelligence. Before the project, I viewed ethics mainly as an evaluation topic. During implementation, I began to understand bias, explainability, privacy and responsible deployment as practical design requirements.
 
