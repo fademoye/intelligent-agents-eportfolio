@@ -1,16 +1,14 @@
-# Final Reflection
-
-## Introduction
+Introduction
 
 This reflection evaluates my learning and development throughout the Intelligent Agents module. It considers my experience of studying agent architectures, contributing to the ResearchMate group project, designing an intelligent agent system and implementing an individual research planning prototype.
 
 The reflection uses Rolfe, Freshwater and Jasper’s (2001) framework of What?, So what? and Now what? to examine my technical, professional and personal learning.
 
-## What?
+What?
 
 The module introduced me to reactive, deliberative, hybrid and multi agent architectures. Through discussions, practical activities and project work, I moved from understanding these approaches theoretically to considering how they could address a real problem.
 
-The main group project was ResearchMate, a proposed hybrid multi agent system for academic research automation. The design included Planning, Retrieval, Processing, Ranking and Storage Agents. These agents were intended to coordinate the interpretation of research queries, retrieval of academic sources, summarisation of information, assessment of credibility and production of structured outputs.
+The group project was ResearchMate, a proposed hybrid multi agent system for academic research automation. The design included Planning, Retrieval, Processing, Ranking and Storage Agents. These agents were intended to coordinate the interpretation of research queries, retrieval of academic sources, summarisation of information, assessment of credibility and production of structured outputs.
 
 The Planning Agent was intended to coordinate the workflow by interpreting the user query, dividing it into tasks and directing the specialist agents. The design combined a deliberative Belief, Desire and Intention approach with more reactive retrieval and processing functions.
 
@@ -20,11 +18,11 @@ The prototype did not reproduce the full ambition of the Week 7 design. It had l
 
 Wooldridge (2009) explains that intelligent agents require characteristics such as autonomy, responsiveness and purposeful behaviour. This helped me recognise that dividing software into modules does not automatically create a genuine multi agent system.
 
-## So what?
+So what?
 
 One of my most important areas of learning was project scoping. During the design stage, I was attracted to the idea of creating a broad system with several specialist agents. I initially associated technical strength with the number of agents, technologies and features included.
 
-The proposed system was more ambitious than could realistically be implemented and evaluated within the available timeframe. At first, reducing the scope felt like a compromise. I was concerned that a smaller prototype might appear less advanced.
+The proposed system was more ambitious than could realistically be implemented and evaluated within the available timeframe.
 
 As implementation progressed, I realised that completing a coherent and testable system was more valuable than presenting a larger design with incomplete functionality. I therefore prioritised the core research planning workflow and organised the system into modules that could be understood and tested separately.
 
@@ -40,7 +38,7 @@ The group project also developed my understanding of virtual teamwork. Working i
 
 At times, uncertainty about roles and scope created frustration. When responsibilities were not recorded clearly, it became difficult to understand ownership and progress. This encouraged me to document my contribution more carefully and to distinguish the group design from my individual implementation.
 
-I learned that effective teamwork requires more than attending meetings. Decisions, responsibilities and deadlines need to be recorded. Evidence should be collected continuously.
+I learned that effective teamwork requires more than attending meetings. Decisions, responsibilities and deadlines need to be recorded.
 
 The module changed my understanding of responsible artificial intelligence. Before the project, I viewed ethics mainly as an evaluation topic. During implementation, I began to understand bias, explainability, privacy and responsible deployment as practical design requirements.
 
@@ -48,7 +46,7 @@ A research planning agent may generate recommendations that appear authoritative
 
 The system should therefore support academic judgement rather than replace it. The National Institute of Standards and Technology (2023) states that artificial intelligence risks should be considered throughout design, development, deployment and monitoring. This reinforced my understanding that responsibility must influence the architecture rather than appear only as a final compliance check.
 
-## Now what?
+Now what?
 
 In future projects, I will define the minimum viable product and evaluation criteria before implementation begins. I will distinguish essential requirements from desirable extensions and future development.
 
@@ -60,7 +58,7 @@ Technically, I would like to develop my understanding of agent orchestration, ac
 
 I will also treat ethical requirements as part of system architecture. Future systems should include source verification, privacy controls, clear limitations, explainable recommendations and opportunities for human review.
 
-Overall, the module strengthened my understanding of intelligent agents, modular Python development, testing, teamwork and responsible artificial intelligence. More importantly, it changed how I approach technical projects. I now place greater value on realistic scope, transparent evaluation, documented collaboration and responsible design.
+Overall, the module strengthened my understanding of intelligent agents, modular Python development, testing, teamwork and responsible artificial intelligence. I now place greater value on realistic scope, transparent evaluation, documented collaboration and responsible design.
 
 ## References
 
