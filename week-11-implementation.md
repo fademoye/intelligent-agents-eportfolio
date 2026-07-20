@@ -4,23 +4,23 @@
 
 The Week 11 implementation was an individual intelligent-agent project focused on academic research planning.
 
-The system was designed to help postgraduate students organise an initial research topic into a structured plan containing:
+The system was designed to help postgraduate students transform an initial research topic into a structured research plan containing:
 
 - a research aim;
 - research objectives;
 - research questions;
-- methodology suggestions;
+- a methodology suggestion;
 - a clearly presented final output.
 
-The implementation developed from the wider ResearchMate concept explored during the group project, but the coding, testing and final implementation presented on this page were completed as my individual work.
+The implementation developed from the wider ResearchMate concept explored during the group project. However, the coding, testing and final prototype presented on this page were completed as my individual work.
 
 ## Problem Being Addressed
 
-Students can find it difficult to align their research topic, aim, objectives, research questions and methodology.
+Postgraduate students can experience difficulty aligning their research topic, aim, objectives, research questions and methodology.
 
 The system was therefore designed to provide structured guidance that could help users develop a more coherent initial research plan.
 
-The system was intended to support academic thinking rather than replace independent research, academic literature or supervisor guidance.
+It was intended to support academic thinking rather than replace independent research, academic literature, university guidance or supervisor feedback.
 
 ## Final System Architecture
 
@@ -28,24 +28,24 @@ The final implementation used a modular Python structure.
 
 The main components included:
 
-- `main.py` – started the application and managed the command-line interaction;
+- `main.py` – started the application and managed interaction with the user;
 - `agent.py` – coordinated the overall research-planning workflow;
 - `planner.py` – developed the structure of the research plan;
 - `retriever.py` – provided simplified retrieval functionality within the prototype;
 - `processor.py` – processed the user input and intermediate information;
 - `output_generator.py` – produced the final structured output;
-- test files – assessed key components and the overall workflow.
+- test files – assessed the main components and overall workflow.
 
-The final implementation used agent-inspired modular components coordinated through a defined workflow. It did not implement fully independent agents with autonomous communication and decision-making.
+The implementation used agent-inspired modular components coordinated through a defined workflow. It did not implement fully autonomous agents communicating independently with one another.
 
 ## Final Workflow
 
 1. The user entered a research topic.
-2. The system processed and validated the input.
+2. The system received and processed the input.
 3. The planning component identified the required research elements.
 4. The coordinating component directed the relevant modules.
-5. The system generated a research aim, objectives, questions and methodology suggestion.
-6. The structured research plan was displayed to the user for review.
+5. The system generated a research aim, objectives, research questions and methodology suggestion.
+6. The completed research plan was presented to the user for review.
 
 ## Technologies Used
 
@@ -58,17 +58,17 @@ The final implementation used:
 - command-line interaction;
 - structured output generation.
 
-## GitHub Repository
+## Individual GitHub Repository
 
-The individual GitHub repository provides access to the final source code, modular project structure, testing files and technical documentation.
+The individual GitHub repository contains the final source code, project structure, testing files and technical documentation.
 
-[View the individual implementation on GitHub](PASTE-YOUR-INDIVIDUAL-REPOSITORY-LINK-HERE)
+[View the individual implementation on GitHub](https://github.com/fademoye/LLM-Planning-Agent-Project)
 
 ## Code Structure
 
-The project was separated into different modules rather than placing all functionality in one large script.
+The project was divided into separate modules rather than placing all functionality into one large script.
 
-This improved:
+This approach improved:
 
 - readability;
 - maintainability;
@@ -76,97 +76,81 @@ This improved:
 - separation of responsibilities;
 - future extensibility.
 
-Separating the planner, processor, retriever and output-generation functions also made it easier to identify errors and test individual components.
+Separating the planner, processor, retriever, coordinating agent and output-generation functions also made it easier to identify errors and test individual components.
 
 ## Testing
 
-The system was tested using unit and functional tests.
+The system was evaluated using unit and functional testing.
 
-The tests checked:
+The tests examined:
 
 - whether the planning component produced the expected structure;
 - whether the overall workflow operated correctly;
-- whether the final output contained the required research-planning elements.
+- whether the final output contained the required research-planning elements;
+- whether the main modules worked together successfully.
 
-Three tests were collected and all three passed successfully.
+Eight tests passed successfully.
 
-Passing the tests increased confidence that the technical workflow operated as intended. However, the tests did not prove that every generated recommendation was academically accurate, relevant or appropriate.
+Passing the tests increased confidence that the technical workflow operated as intended. However, technical success did not prove that every generated recommendation was academically accurate, relevant or suitable.
 
 Further evaluation would be required to assess:
 
-- the alignment between the aim, objectives and questions;
-- the suitability of the suggested methodology;
+- alignment between the aim, objectives and research questions;
+- suitability of the suggested methodology;
 - consistency across different research topics;
 - usefulness to postgraduate students;
 - feedback from academic supervisors.
 
-## Example Output
-
-The following example shows the type of structured research plan produced by the system.
-
-**Research Topic:**  
-[Insert the exact topic used in your real system test.]
-
-**Research Aim:**  
-[Insert the research aim generated by your system.]
-
-**Research Objectives:**
-
-1. [Insert the first generated objective.]
-2. [Insert the second generated objective.]
-3. [Insert the third generated objective.]
-
-**Research Questions:**
-
-1. [Insert the first generated research question.]
-2. [Insert the second generated research question.]
-3. [Insert the third generated research question, where applicable.]
-
-**Suggested Methodology:**  
-[Insert the methodology recommendation generated by your system.]
-
-Replace this example with one genuine output produced by the final implementation.
-
 ## Implementation Evidence
+
+The following evidence demonstrates the operation, structure, testing and presentation of my individual Week 11 implementation.
 
 ### System Running
 
-![Research-planning system running](evidence/implementation/system-running.png)
+This screenshot shows the research-planning application running successfully through the command-line interface.
 
-[Open the system-running screenshot](evidence/implementation/system-running.png)
+![Research-planning system running](evidence/implementation/screenshot%20of%20the%20system%20running%3B.png)
+
+[Open the system-running screenshot](evidence/implementation/screenshot%20of%20the%20system%20running%3B.png)
 
 ### User Input
 
-![Example user input](evidence/implementation/user-input.png)
+This screenshot shows an example research topic entered into the system by the user.
 
-[Open the user-input screenshot](evidence/implementation/user-input.png)
+![Example research topic entered by the user](evidence/implementation/screenshot%20of%20user%20input%3B.png)
+
+[Open the user-input screenshot](evidence/implementation/screenshot%20of%20user%20input%3B.png)
 
 ### Generated Output
 
-![Generated research plan](evidence/implementation/generated-output.png)
+This screenshot shows the structured research plan generated by the system.
 
-[Open the generated-output screenshot](evidence/implementation/generated-output.png)
+![Structured research plan generated by the system](evidence/implementation/screenshot%20of%20generated%20output%3B.png)
+
+[Open the generated-output screenshot](evidence/implementation/screenshot%20of%20generated%20output%3B.png)
 
 ### Project Structure
 
-![Project folder structure](evidence/implementation/project-structure.png)
+This screenshot shows the modular structure of the individual project, including the main application files, agent components and testing files.
+
+![Modular folder structure of the individual project](evidence/implementation/project-structure.png)
 
 [Open the project-structure screenshot](evidence/implementation/project-structure.png)
 
 ### Testing Evidence
 
-![Passed pytest results](evidence/implementation/pytest-passed.png)
+This screenshot shows the successful pytest results used to verify the system components and research-planning workflow.
 
-[Open the pytest-results screenshot](evidence/implementation/pytest-passed.png)
+![Eight successful pytest results](evidence/implementation/tests_passed_8.png)
+
+[Open the pytest-results screenshot](evidence/implementation/tests_passed_8.png)
+
 ## Presentation Evidence
 
-The individual presentation was submitted separately from the code repository. It summarised the project problem, architecture, implementation, testing, limitations and future improvements.
+The individual presentation summarised the project problem, architecture, implementation, testing, limitations and proposed future improvements.
 
-[View the presentation slides](PASTE-YOUR-PRESENTATION-LINK-HERE)
-
-[Read the presentation transcript](PASTE-YOUR-TRANSCRIPT-LINK-HERE)
-
-Remove these links if the presentation and transcript are not being uploaded to the e-portfolio.
+- [View the presentation slides](evidence/implementation/Presentation%20slides.pdf)
+- [Read the presentation transcript](evidence/implementation/Presentation%20transcript.pdf)
 
 ## Limitations
 
@@ -175,15 +159,15 @@ The final implementation was a functional prototype rather than a production-rea
 Its main limitations included:
 
 - the quality of the output depended on the quality and detail of the user input;
-- live academic-database retrieval and complete source verification were not implemented;
-- the system could not guarantee that every aim, objective, question or methodology recommendation was academically appropriate;
+- complete live academic-database retrieval and source verification were not implemented;
+- the system could not guarantee that every aim, objective, research question or methodology recommendation was academically appropriate;
 - testing focused mainly on technical functionality rather than educational quality;
 - the command-line interface was less accessible for non-technical users;
-- the system did not provide detailed explanations for every recommendation;
+- the system did not provide a detailed explanation for every recommendation;
 - further testing with students and academic supervisors would be required;
 - additional privacy, security and responsible-use safeguards would be needed before deployment.
 
-These limitations mean that users would still need to verify the output against academic literature, university requirements and supervisor feedback.
+These limitations mean that users would still need to verify the generated output against academic literature, university requirements and supervisor feedback.
 
 ## Ethical and Professional Considerations
 
@@ -230,11 +214,24 @@ Finally, the project increased my awareness of responsible AI development. Acade
 
 The implementation supported my ability to analyse agent-based architectures by allowing me to compare the broader Week 7 multi-agent design with the more focused modular Week 11 prototype.
 
+Supporting evidence:
+
+- [Week 7 System Design](week-7-design.html)
+- [ResearchMate Team Project](team-project.html)
+- [Critical Project Evaluation](project-evaluation.html)
+
 ### Learning Outcome 2
 
 The system applied intelligent-agent techniques to the real-world problem of helping postgraduate students align their research topic, aim, objectives, research questions and methodology.
 
 The evaluation also considered technical risk and uncertainty, including input quality, source verification and output reliability.
+
+Supporting evidence:
+
+- [System Running Screenshot](evidence/implementation/screenshot%20of%20the%20system%20running%3B.png)
+- [Generated Research Plan Screenshot](evidence/implementation/screenshot%20of%20generated%20output%3B.png)
+- [Passed Pytest Results](evidence/implementation/tests_passed_8.png)
+- [Critical Project Evaluation](project-evaluation.html)
 
 ### Learning Outcome 3
 
@@ -242,8 +239,21 @@ I used Python, GitHub, modular software design and pytest to design, implement a
 
 I also considered legal, social, ethical and professional issues, including privacy, academic integrity, bias, explainability, data reliability and responsible deployment.
 
+Supporting evidence:
+
+- [Individual GitHub Project Repository](https://github.com/fademoye/LLM-Planning-Agent-Project)
+- [Project Structure Screenshot](evidence/implementation/project-structure.png)
+- [Passed Pytest Results](evidence/implementation/tests_passed_8.png)
+- [Reflective Case Studies](reflective-case-studies.html)
+
 ### Learning Outcome 4
 
 Although the final implementation was completed individually, it developed from the wider ResearchMate group project.
 
 The process strengthened my understanding of virtual teamwork, project ownership, role allocation, documentation and the distinction between collaborative and individual contributions.
+
+Supporting evidence:
+
+- [ResearchMate Team Project](team-project.html)
+- [Team Meeting Notes](team-meetings.html)
+- [Final Reflection](final-reflection.html)
