@@ -41,6 +41,14 @@ These included:
 
 The intention was for these functions to work together to transform an initial research idea into a structured academic research plan.
 
+## ResearchMate Architecture and Design Evidence
+
+The diagram below shows the proposed ResearchMate hybrid multi-agent architecture developed as part of the group project.
+
+The Planning Agent uses a deliberative BDI approach to decompose the user’s research query. Retrieval, Processing and Ranking agents perform specialist functions, while LangGraph coordinates the workflow. The Storage/Output Agent prepares the final results.
+
+![ResearchMate hybrid multi-agent architecture](evidence/team/researchmate-architecture.png)
+
 ## Tools and Technologies Considered
 
 The group considered:
