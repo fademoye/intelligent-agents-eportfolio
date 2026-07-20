@@ -1,10 +1,12 @@
-Introduction
+# Final Reflection
+
+## Introduction
 
 This reflection evaluates my learning and development throughout the Intelligent Agents module. It considers my experience of studying agent architectures, contributing to the ResearchMate group project, designing an intelligent agent system and implementing an individual research planning prototype.
 
 The reflection uses Rolfe, Freshwater and Jasper’s (2001) framework of What?, So what? and Now what? to examine my technical, professional and personal learning.
 
-What?
+## What?
 
 The module introduced me to reactive, deliberative, hybrid and multi agent architectures. Through discussions, practical activities and project work, I moved from understanding these approaches theoretically to considering how they could address a real problem.
 
@@ -18,7 +20,7 @@ The prototype did not reproduce the full ambition of the Week 7 design. It had l
 
 Wooldridge (2009) explains that intelligent agents require characteristics such as autonomy, responsiveness and purposeful behaviour. This helped me recognise that dividing software into modules does not automatically create a genuine multi agent system.
 
-So what?
+## So what?
 
 One of my most important areas of learning was project scoping. During the design stage, I was attracted to the idea of creating a broad system with several specialist agents. I initially associated technical strength with the number of agents, technologies and features included.
 
@@ -46,7 +48,7 @@ A research planning agent may generate recommendations that appear authoritative
 
 The system should therefore support academic judgement rather than replace it. The National Institute of Standards and Technology (2023) states that artificial intelligence risks should be considered throughout design, development, deployment and monitoring. This reinforced my understanding that responsibility must influence the architecture rather than appear only as a final compliance check.
 
-Now what?
+## Now what?
 
 In future projects, I will define the minimum viable product and evaluation criteria before implementation begins. I will distinguish essential requirements from desirable extensions and future development.
 
