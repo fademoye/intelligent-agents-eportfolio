@@ -12,7 +12,7 @@ ResearchMate was designed to automate selected stages of the academic research p
 
 The proposed system aimed to:
 
-- receive a research query;
+- receive an academic research query;
 - decompose the query into structured subtasks;
 - retrieve relevant academic sources;
 - process and summarise retrieved information;
@@ -20,11 +20,11 @@ The proposed system aimed to:
 - remove duplicate results;
 - produce structured research outputs.
 
-The intention was to support academic research activity rather than replace independent analysis, academic judgement or supervisor guidance.
+The system was intended to support academic research rather than replace independent analysis, academic judgement or supervisor guidance.
 
 ## Problem Being Addressed
 
-The increasing volume of academic literature can make it difficult and time-consuming for researchers and students to identify relevant and credible sources.
+The growing volume of academic literature can make identifying relevant and credible sources difficult and time-consuming.
 
 ResearchMate was intended to reduce this burden by coordinating specialised agents across planning, retrieval, processing, ranking and output generation.
 
@@ -34,7 +34,7 @@ The intended users included:
 
 - postgraduate students;
 - dissertation students;
-- researchers carrying out initial literature searches;
+- researchers carrying out an initial literature search;
 - users preparing an academic project or research proposal.
 
 ## Proposed Architecture
@@ -57,7 +57,7 @@ The proposed system also used ReAct-style replanning. Where the initial retrieva
 
 ## ResearchMate Architecture
 
-The diagram below shows the proposed hybrid architecture.
+The diagram below shows the proposed hybrid multi-agent architecture developed during the group project.
 
 ![ResearchMate hybrid multi-agent architecture](https://fademoye.github.io/intelligent-agents-eportfolio/evidence/team/researchmate-architecture.png)
 
@@ -70,9 +70,10 @@ The diagram below shows the proposed hybrid architecture.
 The Planning Agent would:
 
 - receive the user query;
-- decompose it into ordered subtasks;
+- interpret the research request;
+- divide the request into ordered subtasks;
 - coordinate the subordinate agents;
-- assess whether retrieval results were sufficient;
+- assess whether the retrieved results were sufficient;
 - trigger replanning where necessary.
 
 ### Retrieval Agent
@@ -82,7 +83,7 @@ The Retrieval Agent would:
 - search academic sources;
 - query arXiv, Semantic Scholar and OpenAlex;
 - retrieve papers and associated metadata;
-- continue where one retrieval service failed.
+- continue operating where one retrieval service failed.
 
 ### Processing Agent
 
@@ -98,9 +99,9 @@ The Processing Agent would:
 The Ranking Agent would:
 
 - score source relevance;
-- assess credibility;
-- remove duplicate results;
-- prioritise stronger sources.
+- assess source credibility;
+- identify duplicate results;
+- prioritise stronger academic sources.
 
 ### Storage Agent
 
@@ -112,14 +113,14 @@ The Storage Agent would:
 
 ## Proposed Workflow
 
-1. The user submits a research query.
-2. The Planning Agent validates and decomposes the query.
+1. The user submits an academic research query.
+2. The Planning Agent interprets and decomposes the query.
 3. The Retrieval Agent searches arXiv, Semantic Scholar and OpenAlex in parallel.
 4. If the results are insufficient, the Planning Agent revises the subtasks.
 5. The Processing Agent summarises and prepares the retrieved material.
-6. The Ranking Agent scores relevance, credibility and duplication.
-7. The Storage Agent persists and formats the final results.
-8. The output is returned to the user for review.
+6. The Ranking Agent assesses relevance, credibility and duplication.
+7. The Storage Agent saves and formats the final results.
+8. The completed output is returned to the user for review.
 
 ## Tools and Technologies Evaluated
 
@@ -142,17 +143,25 @@ The proposed design included:
 - pytest and pytest-asyncio;
 - GitHub.
 
-CrewAI was considered but not selected because the proposed system required a stateful ReAct replanning cycle rather than mainly role-based delegation.
+CrewAI was considered but was not selected for the proposed final design because ResearchMate required a stateful ReAct replanning cycle rather than mainly role-based task delegation.
 
-LangGraph was selected because it was better suited to representing the system as a stateful workflow with explicit nodes, transitions and repeated planning activity.
+LangGraph was selected because it was considered more suitable for representing a stateful workflow containing defined nodes, transitions and repeated planning activity.
 
-Not all of these technologies were implemented during the group stage. Some formed part of the proposed design and future development plan.
+Not all of these technologies were implemented during the group stage. Some formed part of the proposed architecture and future development plan.
 
 ## Design Rationale
 
 A multi-agent architecture was considered appropriate because academic research automation includes several different tasks requiring different capabilities.
 
-A single-agent design was rejected because one component would have needed to manage planning, retrieval, summarisation, ranking, deduplication and output generation.
+A single-agent design was rejected because one component would have needed to manage:
+
+- planning;
+- retrieval;
+- summarisation;
+- credibility ranking;
+- deduplication;
+- storage;
+- output generation.
 
 Separating these tasks across specialist agents supported:
 
@@ -160,14 +169,15 @@ Separating these tasks across specialist agents supported:
 - maintainability;
 - testability;
 - separation of concerns;
+- clearer system coordination;
 - future extensibility.
 
-However, the approach also increased coordination and integration complexity.
+However, the approach also increased integration complexity.
 
 Each additional agent required:
 
 - clearly defined inputs and outputs;
-- structured message formats;
+- structured communication;
 - error handling;
 - testing;
 - orchestration.
@@ -178,21 +188,21 @@ This made the original design ambitious for the available timeframe.
 
 ### LLM Hallucinations
 
-The system could produce confident but unsupported claims.
+The system could produce confident but unsupported statements.
 
-The proposed mitigation was to restrict processing to retrieved academic material and use credibility scoring.
+The proposed mitigation was to restrict processing to retrieved academic material and use credibility scoring before presenting results.
 
 ### Context-Window Limitations
 
-Large volumes of full-text academic content could reduce model performance.
+Large volumes of full-text academic content could exceed practical context limits and reduce model performance.
 
-The proposed design therefore focused initially on abstracts and relevant passages.
+The initial design therefore focused on abstracts and smaller relevant passages.
 
 ### Agent-Coordination Complexity
 
-Five agents introduced the risk of message mismatches and failures between components.
+Five interacting agents introduced the risk of message mismatches and failures between components.
 
-Pydantic was proposed to enforce structured contracts, while LangGraph would make the workflow explicit.
+Pydantic was proposed to enforce structured communication, while LangGraph would make the workflow and replanning cycle explicit.
 
 ### API Dependency and Latency
 
@@ -204,30 +214,30 @@ The proposed mitigations included:
 - exception handling;
 - concurrency controls;
 - continuation where one source failed;
-- logging.
+- system logging.
 
 ### Source Credibility
 
 Not every retrieved source would have equal academic value.
 
-The Ranking Agent was intended to assess relevance, citation information and duplication before presenting the results.
+The Ranking Agent was intended to assess relevance, citation information and duplication before the results were returned.
 
-### Scope
+### Excessive Scope
 
-The full design included several agents, external APIs, orchestration, vector storage, testing and an interface.
+The proposed design involved multiple agents, external APIs, orchestration, vector storage, testing and an interactive interface.
 
-This created a risk that the system would be too broad to implement and evaluate fully within the available time.
+This created a risk that the full system would be too broad to implement and evaluate completely within the available timeframe.
 
 ## Ethical and Professional Considerations
 
-The system was intended to support academic work rather than replace independent judgement.
+ResearchMate was intended to support academic work rather than replace independent judgement.
 
 Users would still need to:
 
 - verify sources;
 - assess the relevance of retrieved material;
 - consult academic literature;
-- follow university guidance;
+- follow university requirements;
 - obtain supervisor feedback.
 
 A responsibly developed version would require:
@@ -238,26 +248,25 @@ A responsibly developed version would require:
 - human review;
 - warnings about limitations;
 - appropriate handling of user data;
-- protection against academic overreliance.
+- protection against student overreliance.
 
 ## Week 7 Evidence
 
 - [ResearchMate Architecture Diagram](https://fademoye.github.io/intelligent-agents-eportfolio/evidence/team/researchmate-architecture.png)
 - [ResearchMate Team Project](team-project.html)
-- [Week 11 Individual Implementation](week-11-implementation.html)
+- [Week 11 Final Implementation](week-11-implementation.html)
 - [Critical Project Evaluation](project-evaluation.html)
-
-Only add the design document, workflow diagram, presentation material or other artefacts when those files have been uploaded and linked.
+- [Module Learning Outcomes](learning-outcomes.html)
 
 ## Reflection on the Design Stage
 
 At the design stage, I initially viewed the number of agents and features as evidence of technical strength.
 
-As the project developed, I recognised that the architecture was broader than could be implemented and evaluated reliably within the module timeframe.
+As the project developed, I recognised that the proposed architecture was broader than could be implemented and evaluated reliably within the available module timeframe.
 
-This changed my understanding of good design.
+This changed my understanding of effective system design.
 
-An effective architecture must not only be technically ambitious. It must also be:
+A strong architecture must not only be technically ambitious. It must also be:
 
 - coherent;
 - proportionate to the problem;
@@ -265,13 +274,13 @@ An effective architecture must not only be technically ambitious. It must also b
 - possible to test;
 - transparent about its limitations.
 
-I also learned that design claims must distinguish clearly between proposed and implemented functionality.
+I also learned that design documentation must distinguish clearly between proposed and implemented functionality.
 
 The Week 7 design included LangGraph, multiple academic APIs, ChromaDB, Chainlit and five specialist agents. These formed part of the proposed architecture and should not be described as completed functionality where they were not implemented.
 
-In future, I would define the minimum viable system, evaluation criteria, dependencies and evidence requirements before expanding the number of agents.
+In future, I would define the minimum viable system, evaluation criteria, technical dependencies and evidence requirements before expanding the number of agents.
 
-I would also separate features into:
+I would divide proposed features into:
 
 - essential requirements;
 - desirable extensions;
