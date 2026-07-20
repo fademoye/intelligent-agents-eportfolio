@@ -10,13 +10,13 @@ During the module, I developed my understanding of reactive, deliberative, hybri
 
 This learning was applied during the design of ResearchMate, where my group considered how specialised components could work together to support academic research planning. I also evaluated the difference between the broader Week 7 multi-agent design and the more focused modular implementation completed in Week 11.
 
-### Supporting evidence
+### Supporting Evidence
 
-- [ResearchMate team project](team-project.html)
-- [Week 7 system design](week-7-design.html)
-- [Critical project evaluation](project-evaluation.html)
-- Architecture diagrams and design artefacts
-- Collaborative discussion activities
+- [ResearchMate Team Project](team-project.html)
+- [Week 7 System Design](week-7-design.html)
+- [Critical Project Evaluation](project-evaluation.html)
+- [Collaborative Discussion Activities](forum-summaries.html)
+- ResearchMate architecture and design artefacts
 
 ## Learning Outcome 2
 
@@ -26,15 +26,15 @@ I applied intelligent-agent techniques to the real-world problem of helping post
 
 My individual implementation generated a structured research plan from a user-provided topic. I evaluated the system through unit and functional testing, sample outputs and critical analysis of its limitations.
 
-The project involved technical risk and uncertainty because the quality of the generated guidance depended on the quality of the user input, the limitations of the model and the absence of complete academic-source verification.
+The project involved technical risk and uncertainty because the quality of the generated guidance depended on the quality of the user input, the limitations of the system and the absence of complete academic-source verification.
 
-### Supporting evidence
+### Supporting Evidence
 
-- [Week 11 final implementation](week-11-implementation.html)
-- System outputs
+- [Week 11 Final Implementation](week-11-implementation.html)
+- System-generated outputs
 - Unit and functional testing
-- [Critical project evaluation](project-evaluation.html)
-- Testing screenshots and implementation evidence
+- [Critical Project Evaluation](project-evaluation.html)
+- Implementation and testing screenshots
 
 ## Learning Outcome 3
 
@@ -42,18 +42,17 @@ The project involved technical risk and uncertainty because the quality of the g
 
 I used Python, GitHub, modular software design and pytest to design, implement and evaluate an intelligent-agent prototype.
 
-I also considered bias, explainability, data reliability, privacy, responsible deployment and the limitations of AI-generated academic guidance. These concerns influenced my decision to position the system as a support tool rather than an authoritative academic adviser.
+I also considered bias, explainability, data reliability, privacy, data protection, academic integrity, responsible deployment and the limitations of AI-generated academic guidance. These concerns influenced my decision to position the system as a support tool rather than an authoritative academic adviser.
 
-They also informed the safeguards and future improvements proposed in my evaluation, including source verification, human review, clearer explanations and user warnings.
+They also informed the safeguards and future improvements proposed in my evaluation, including academic-source verification, human review, clearer explanations, user warnings and appropriate handling of user data.
 
-### Supporting evidence
+### Supporting Evidence
 
-- Python implementation
-- GitHub project repository
+- [Week 11 Final Implementation](week-11-implementation.html)
+- Individual GitHub project repository
 - Testing evidence
-- [Reflective case studies](reflective-case-studies.html)
-- [Critical project evaluation](project-evaluation.html)
-- Ethical and professional analysis
+- [Reflective Case Studies](reflective-case-studies.html)
+- [Critical Project Evaluation](project-evaluation.html)
 
 ## Learning Outcome 4
 
@@ -61,16 +60,18 @@ They also informed the safeguards and future improvements proposed in my evaluat
 
 The ResearchMate group project required virtual collaboration, communication, shared decision-making and the allocation of project responsibilities.
 
-I contributed to project discussions, research, design decisions, documentation and preparation of the group submission. The experience also helped me recognise the importance of clearer role allocation, documented actions and regular progress tracking in virtual teamwork.
+I contributed to project discussions, research into agent approaches, development of the ResearchMate workflow, design decisions, documentation and preparation of the group submission.
 
-### Supporting evidence
+The experience also helped me recognise the importance of clearer role allocation, documented actions and regular progress tracking in virtual teamwork.
 
-- [Team project](team-project.html)
-- [Team meeting notes](team-meetings.html)
+### Supporting Evidence
+
+- [Team Project](team-project.html)
+- [Team Meeting Notes](team-meetings.html)
 - Group communication evidence
-- Peer-review activity
+- Peer-review evidence
 - ResearchMate project artefacts
-- Reflection on teamwork
+- [Final Reflection](final-reflection.html)
 
 ## Overall Summary
 
